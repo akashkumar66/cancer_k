@@ -18,7 +18,7 @@ const StickyCTA = () => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-[90] flex flex-col space-y-4">
+    <div className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[90] flex flex-col space-y-4">
       <AnimatePresence>
         {isVisible && (
           <motion.button
@@ -26,9 +26,9 @@ const StickyCTA = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0, y: 20 }}
             onClick={scrollToTop}
-            className="w-12 h-12 bg-white text-secondary rounded-full shadow-2xl flex items-center justify-center border border-gray-100 hover:bg-gray-50 transition-all"
+            className="w-10 h-10 md:w-12 md:h-12 bg-white text-secondary rounded-full shadow-2xl flex items-center justify-center border border-gray-100 hover:bg-gray-50 transition-all"
           >
-            <ArrowUp size={24} />
+            <ArrowUp size={20} className="md:w-6 md:h-6" />
           </motion.button>
         )}
       </AnimatePresence>
@@ -39,21 +39,13 @@ const StickyCTA = () => {
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="w-16 h-16 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center relative group"
+        className="w-12 h-12 md:w-16 md:h-16 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center relative group"
       >
-        <MessageCircle size={32} />
-        <div className="absolute right-full mr-4 bg-white text-secondary px-4 py-2 rounded-xl shadow-xl font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-gray-100">
+        <MessageCircle className="w-6 h-6 md:w-8 md:h-8" />
+        <div className="absolute right-full mr-4 bg-white text-secondary px-4 py-2 rounded-xl shadow-xl font-bold whitespace-nowrap opacity-0 md:group-hover:opacity-100 transition-opacity pointer-events-none border border-gray-100">
           Chat with us!
         </div>
-        <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-bounce" />
-      </motion.a>
-
-      <motion.a
-        href="#plans"
-        className="md:hidden btn-gradient px-8 py-4 rounded-full shadow-2xl font-bold text-center"
-        whileHover={{ scale: 1.05 }}
-      >
-        View Plans
+        <div className="absolute -top-0.5 -right-0.5 w-3 h-3 md:w-4 md:h-4 bg-red-500 rounded-full border-2 border-white animate-bounce" />
       </motion.a>
     </div>
   );

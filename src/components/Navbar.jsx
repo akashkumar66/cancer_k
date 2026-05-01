@@ -15,9 +15,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'How it Works', href: '#how-it-works' },
-    { name: 'Benefits', href: '#benefits' },
-    { name: 'Plans', href: '#plans' },
-    { name: 'Testimonials', href: '#testimonials' },
+    // { name: 'Benefits', href: '#benefits' },
+    // { name: 'Plans', href: '#plans' },
+    // { name: 'Testimonials', href: '#testimonials' },
   ];
 
   return (
@@ -30,16 +30,16 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               className="font-semibold text-secondary hover:text-primary transition-colors"
             >
               {link.name}
             </a>
           ))}
-          <a 
-            href="#plans" 
+          <a
+            href="#plans"
             className="btn-gradient px-6 py-2.5 rounded-full shadow-premium"
           >
             Check Plans

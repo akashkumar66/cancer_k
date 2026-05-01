@@ -1,10 +1,25 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { CheckCircle2, ArrowRight, Activity, ShieldPlus, Users } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { CheckCircle2, ArrowRight, Activity, ShieldPlus, Users, X, Mail } from 'lucide-react';
 
 const Hero = () => {
+  const [activePopup, setActivePopup] = useState(null);
+
+  const popups = {
+    complete: "Get comprehensive support for all cancer treatments, including medical, emotional, and financial guidance throughout your journey.",
+    stage: "Whether early detection or advanced stages, our plans are designed to provide maximum benefits regardless of your current condition.",
+    covered: "From common to rare types, our coverage extends across all known cancer variations for complete peace of mind.",
+    moneyback: "We offer a money-back guarantee to ensure your complete satisfaction and peace of mind.",
+    treatments: "Full coverage for chemotherapy, radiation therapy, complex surgeries, and post-operative care."
+  };
+
+  const handlePopup = (key) => {
+    if (activePopup === key) setActivePopup(null);
+    else setActivePopup(key);
+  };
+
   return (
-    <section className="relative pt-24 overflow-hidden">
+    <section className="relative pt-20 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl -z-10" />
@@ -20,25 +35,202 @@ const Hero = () => {
             <span>India's Largest Healthcare Network</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight text-secondary mb-6">
-            Save Up to <span className="text-primary">40% on Cancer Treatment</span> Bills Instantly
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-secondary mb-6">
+            Real Support <span className="text-primary text-4xl">When It Matters Most — Even After</span> Cancer Detection
           </h1>
 
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            India is the Largest Capital of Cancer in the World, With 1.5 million new cancer cases every year, making it a global health priority.
+          <p className=" text-xl text-gray-600 mb-14 leading-relaxed">
+
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
-            <button className="btn-gradient w-full sm:w-auto px-10 py-4 rounded-full text-lg flex items-center justify-center space-x-2">
-              <span>Check Plans Now</span>
+          <div className="relative mb-4 w-full">
+            <button
+              onClick={() => handlePopup('complete')}
+              className="w-full px-6 py-3 rounded-2xl text-lg flex items-center justify-between bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
+            >
+              <div className="flex items-center space-x-3">
+                <img src="/handshake1.jpg" alt="" className='w-7 h-7 rounded-sm object-cover' />
+                <span className="font-semibold">Complete Cancer Support</span>
+              </div>
               <ArrowRight size={20} />
             </button>
-            <button className="w-full sm:w-auto border-2 border-secondary/10 hover:border-secondary/30 px-10 py-4 rounded-full text-lg font-semibold text-secondary transition-all">
-              Watch How it Works
-            </button>
+            <AnimatePresence>
+              {activePopup === 'complete' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                  className="absolute bottom-full left-0 right-0 mb-4 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
+                >
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setActivePopup(null); }}
+                    className="absolute top-3 right-3 p-1 rounded-full text-gray-400 hover:text-primary hover:bg-primary/10 transition-colors"
+                  >
+                    <X size={18} />
+                  </button>
+                  <div className="flex flex-col items-center text-center mt-2">
+                    <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
+                      <Mail size={24} />
+                    </div>
+                    <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.complete}</p>
+                  </div>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-[10px] border-transparent border-t-white drop-shadow-sm"></div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 w-full">
+            <div className="relative">
+              <button
+                onClick={() => handlePopup('stage')}
+                className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
+              >
+                <div className="flex items-center space-x-3 text-left">
+                  <img src="/effective.png" alt="" className='w-6 h-6 shrink-0' />
+                  <span className="font-medium leading-tight">Effective At Any Stage</span>
+                </div>
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+              </button>
+              <AnimatePresence>
+                {activePopup === 'stage' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute bottom-full left-0 right-0 mb-4 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
+                  >
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setActivePopup(null); }}
+                      className="absolute top-3 right-3 p-1 rounded-full text-gray-400 hover:text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <X size={18} />
+                    </button>
+                    <div className="flex flex-col items-center text-center mt-2">
+                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
+                        <Mail size={20} />
+                      </div>
+                      <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.stage}</p>
+                    </div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className="relative">
+              <button
+                onClick={() => handlePopup('covered')}
+                className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
+              >
+                <div className="flex items-center space-x-3 text-left">
+                  <img src="/todo1.png" alt="" className='w-6 h-6 shrink-0' />
+                  <span className="font-medium leading-tight">All cancer covered</span>
+                </div>
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+              </button>
+              <AnimatePresence>
+                {activePopup === 'covered' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute bottom-full left-0 right-0 mb-4 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
+                  >
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setActivePopup(null); }}
+                      className="absolute top-3 right-3 p-1 rounded-full text-gray-400 hover:text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <X size={18} />
+                    </button>
+                    <div className="flex flex-col items-center text-center mt-2">
+                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
+                        <Mail size={20} />
+                      </div>
+                      <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.covered}</p>
+                    </div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className="relative">
+              <button
+                onClick={() => handlePopup('moneyback')}
+                className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
+              >
+                <div className="flex items-center space-x-3 text-left">
+                  <img src="/moneyback.png" alt="" className='w-6 h-6 shrink-0' />
+                  <span className="font-medium leading-tight">Money Back Guarantee</span>
+                </div>
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+              </button>
+              <AnimatePresence>
+                {activePopup === 'moneyback' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute bottom-full left-0 right-0 mb-4 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
+                  >
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setActivePopup(null); }}
+                      className="absolute top-3 right-3 p-1 rounded-full text-gray-400 hover:text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <X size={18} />
+                    </button>
+                    <div className="flex flex-col items-center text-center mt-2">
+                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
+                        <Mail size={20} />
+                      </div>
+                      <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.moneyback}</p>
+                    </div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div className="relative">
+              <button
+                onClick={() => handlePopup('treatments')}
+                className="w-full h-full px-5 py-3 rounded-2xl text-sm flex items-center justify-between group bg-primary/10 hover:bg-primary/20 text-secondary transition-all"
+              >
+                <div className="flex items-center space-x-3 text-left">
+                  <img src="/work.png" alt="" className='w-6 h-6 shrink-0' />
+                  <span className="font-medium leading-tight">Works on Chemo, Radiation and Surgeries</span>
+                </div>
+                <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 transition-opacity" />
+              </button>
+              <AnimatePresence>
+                {activePopup === 'treatments' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                    className="absolute bottom-full left-0 right-0 mb-4 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
+                  >
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setActivePopup(null); }}
+                      className="absolute top-3 right-3 p-1 rounded-full text-gray-400 hover:text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <X size={18} />
+                    </button>
+                    <div className="flex flex-col items-center text-center mt-2">
+                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
+                        <Mail size={20} />
+                      </div>
+                      <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.treatments}</p>
+                    </div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </div>
+
+          <div className=" grid grid-cols-2 sm:grid-cols-3 gap-6">
             <div className="flex items-center space-x-2 text-gray-700">
               <CheckCircle2 className="text-accent" size={20} />
               <span className="font-medium">1000+ Hospitals</span>
@@ -60,9 +252,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative"
         >
-          <div className="relative mt-16 mb-16 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/family.png"
+              src="/cancerpic.jpg"
               alt="Happy Indian Family"
               className="w-full h-full object-cover"
             />

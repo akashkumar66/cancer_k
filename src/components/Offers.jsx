@@ -1,0 +1,102 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import {
+  ShieldCheck,
+  TrendingUp,
+  Umbrella,
+  Target,
+  Ambulance,
+  Home,
+  Headphones,
+  BadgePercent,
+  Cloud,
+  Truck
+} from 'lucide-react';
+
+const offers = [
+  { id: 1, title: 'Works on all Cancer Treatments', icon: ShieldCheck, color: 'text-green-500' },
+  { id: 2, title: 'No Age Limit to Purchase', icon: TrendingUp, color: 'text-blue-500' },
+  { id: 3, title: 'No Limit on Medical Expenditure', icon: Umbrella, color: 'text-yellow-500' },
+  { id: 4, title: 'Effective at any Stage', icon: Target, color: 'text-teal-500' },
+  { id: 5, title: 'Free Ambulance Service', icon: Ambulance, color: 'text-red-500' },
+  { id: 6, title: 'Health Care at Home', icon: Home, color: 'text-orange-500' },
+  { id: 7, title: 'Free Health Counsellor', icon: Headphones, color: 'text-indigo-500' },
+  { id: 8, title: 'Discounted Tests, Treatments & Surgeries', icon: BadgePercent, color: 'text-rose-500' },
+  { id: 9, title: 'Free Cloud Storage of Medical Records', icon: Cloud, color: 'text-sky-500' },
+  { id: 10, title: 'Free Tests Pick-up', icon: Truck, color: 'text-gray-700' },
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: 'spring', stiffness: 100 }
+  }
+};
+
+const Offers = () => {
+  return (
+    <section className="py-20 bg-[#F4F4F4]">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-bold text-[#2A2A2A] mb-4"
+          >
+            Oxxy Offers Complete Protection
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-500"
+          >
+            The Only Health Plan to Work After Detection of Cancer
+          </motion.p>
+        </div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+        >
+          {offers.map((offer) => {
+            const Icon = offer.icon;
+            return (
+              <motion.div
+                key={offer.id}
+                variants={itemVariants}
+                className="bg-white hover:bg-primary/20 hover:[#icn]-translate-y-4 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+              >
+                <div id='icn' className="transition-all duration-200 mb-4 p-4 bg-gray-50 rounded-full">
+                  <Icon size={40} strokeWidth={1.5} className={offer.color} />
+                </div>
+                <h3 className="text-sm font-semibold text-[#1A4B46] leading-tight">
+                  {offer.title}
+                </h3>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Offers;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Offers from './components/Offers';
 import Problem from './components/Problem';
 import FeaturesGrid from './components/FeaturesGrid';
 import CancerAwareness from './components/CancerAwareness';
@@ -35,6 +36,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Offers />
         <Problem />
         <FeaturesGrid />
         <CancerAwareness />

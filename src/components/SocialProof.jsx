@@ -24,6 +24,19 @@ const SocialProof = () => {
     }
   ];
 
+  const mediaCoverage = [
+    { img: "/1_toi1.png", title: "The Times of India", desc: "Oxxy launches affordable health plan for entire family" },
+    { img: "/2_core.png", title: "Core Sector Communique", desc: "OXXY launches its plan to give nightmare to Health Insurance Companies" },
+    { img: "/7_tele.png", title: "Telecompaper", desc: "OnePlus, Oxxy partner on health project in India" },
+    { img: "/9_et.png", title: "Economic Times", desc: "Oxxy to launch chain of hospitals across India" },
+    { img: "/14_firstpost.png", title: "Firstpost", desc: "Uber-Oxxy tie up: Free cab rides to all hospitals" },
+    { img: "/25_live.png", title: "Mint", desc: "Uber, Oxxy tie up to provide cab rides to Delhi hospitals" },
+    { img: "/40_oneindia.png", title: "One India", desc: "Oxxy to make FD of ₹11,000 for every girl child born" },
+    { img: "/41_inkhabar.png", title: "Inkhabar", desc: "Good news for every girl child born in India - Oxxy FD" },
+    { img: "/45_naiduniya.png", title: "Naidunia Jagran", desc: "FD of ₹11,000 on birth of every girl child in India" }
+  ];
+
+
   return (
     <section id="testimonials" className="section-padding bg-secondary relative overflow-hidden">
       {/* Decorative Circles */}
@@ -36,7 +49,7 @@ const SocialProof = () => {
           <p className="text-xl text-white/70">Join millions of Indians who are already saving on their healthcare costs with Oxxy.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 px-4">
           {testimonials.map((t, index) => (
             <motion.div
               key={index}
@@ -62,49 +75,52 @@ const SocialProof = () => {
           ))}
         </div>
 
-        <div className="mt-24 pt-16 border-t border-white/10">
-          <h2 className="text-center text-white text-3xl font-bold mb-12 uppercase tracking-wider">Media Coverage</h2>
-          <div className="flex overflow-x-auto pb-10 gap-6 snap-x snap-mandatory scrollbar-hide no-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-            {[
-              { img: "/1_toi1.png", title: "The Times of India", desc: "Oxxy launches affordable health plan for entire family" },
-              { img: "/2_core.png", title: "Core Sector Communique", desc: "OXXY launches its plan to give nightmare to Health Insurance Companies" },
-              { img: "/7_tele.png", title: "Telecompaper", desc: "OnePlus, Oxxy partner on health project in India" },
-              { img: "/8_toi2.png", title: "The Times of India", desc: "Oxxy moves to launch world's largest transparent, affordable" },
-              { img: "/9_et.png", title: "Economic Times", desc: "Oxxy to launch chain of hospitals across India" },
-              { img: "/14_firstpost.png", title: "Firstpost", desc: "Uber-Oxxy tie up: Free cab rides to all hospitals" },
-              { img: "/16_toi3.png", title: "The Times of India", desc: "Oxxy to hold 500 free health camps under Swastha Bharat" },
-              { img: "/18_toi4.png", title: "The Times of India", desc: "Oxxy medical partner for Blind Cricket World Cup T20" },
-              { img: "/25_live.png", title: "Mint", desc: "Uber, Oxxy tie up to provide cab rides to Delhi hospitals" },
-              { img: "/40_oneindia.png", title: "One India", desc: "Oxxy to make FD of ₹11,000 for every girl child born" },
-              { img: "/41_inkhabar.png", title: "Inkhabar", desc: "Good news for every girl child born in India - Oxxy FD" },
-              { img: "/45_naiduniya.png", title: "Naidunia Jagran", "desc": "FD of ₹11,000 on birth of every girl child in India" }
-            ].map((media, i) => (
-              <div key={i} className="flex-shrink-0 w-[300px] bg-[#E0F2F1] rounded-2xl p-4 flex flex-col items-center text-center shadow-lg border border-teal-100 group transition-all duration-300 hover:scale-105 snap-center">
-                <div className="bg-white w-full h-32 rounded-xl border border-gray-800 flex items-center justify-center p-2 mb-4 overflow-hidden">
-                  <img src={media.img} alt={media.title} className="max-w-full max-h-full object-contain" />
+        <div className="mt-32 pt-16 border-t border-white/10">
+          <h2 className="text-center text-white text-3xl font-bold mb-16 uppercase tracking-widest">Media Coverage</h2>
+
+          <div className="relative overflow-hidden">
+            {/* Gradient Overlays for smooth fade effect */}
+            <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-secondary via-secondary/80 to-transparent z-20 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-secondary via-secondary/80 to-transparent z-20 pointer-events-none" />
+
+            <motion.div
+              className="flex gap-8 py-4"
+              animate={{
+                x: [0, -2952], // (300px width + 32px gap) * 9 items = 2988. Corrected to match exact width.
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 50,
+                  ease: "linear",
+                },
+              }}
+              style={{ width: "max-content" }}
+            >
+              {[...mediaCoverage, ...mediaCoverage].map((media, i) => (
+                <div key={i} className="flex-shrink-0 w-[300px] bg-[#E0F2F1] rounded-[2rem] p-6 flex flex-col items-center text-center shadow-2xl border border-teal-100/50 group transition-all duration-500 hover:scale-105 hover:shadow-primary/20">
+                  <div className="bg-white w-full h-36 rounded-2xl border border-gray-200 flex items-center justify-center p-4 mb-6 overflow-hidden shadow-inner group-hover:border-primary/30 transition-colors">
+                    <img src={media.img} alt={media.title} className="max-w-full max-h-full object-contain transition-all duration-500" />
+                  </div>
+                  <h4 className="text-[#00796B] font-bold text-xl mb-3">{media.title}</h4>
+                  <p className="text-gray-600 text-sm mb-8 flex-grow leading-relaxed h-12 overflow-hidden px-2">
+                    {media.desc}
+                  </p>
+                  <a
+                    href="#"
+                    className="bg-[#009688] text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center space-x-3 transition-all duration-300 hover:bg-[#00796B] hover:shadow-lg active:scale-95"
+                  >
+                    <span className="w-6 h-6 bg-white/20 text-white rounded-full flex items-center justify-center text-xs backdrop-blur-sm">+</span>
+                    <span>Read Article</span>
+                  </a>
                 </div>
-                <h4 className="text-[#00796B] font-bold text-lg mb-2">{media.title}</h4>
-                <p className="text-gray-600 text-sm mb-6 flex-grow leading-snug h-12 overflow-hidden">
-                  {media.desc}
-                </p>
-                <a
-                  href="#"
-                  className="bg-[#009688] text-white px-4 py-2 rounded-lg font-bold text-sm flex items-center space-x-2 transition-colors hover:bg-[#00796B]"
-                >
-                  <span className="w-5 h-5 bg-white text-[#009688] rounded-full flex items-center justify-center text-xs">+</span>
-                  <span>View More</span>
-                </a>
-              </div>
-            ))}
-          </div>
-          {/* Scroll Indicators */}
-          <div className="flex justify-center space-x-2 mt-4">
-            {[...Array(12)].map((_, i) => (
-              <div key={i} className="w-2 h-2 rounded-full bg-white/20" />
-            ))}
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>
+
     </section>
   );
 };

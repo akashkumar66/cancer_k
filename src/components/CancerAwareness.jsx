@@ -78,11 +78,11 @@ const CancerAwareness = () => {
               <img
                 src="/cancerrate.webp"
                 alt="Oncology Care"
-                className="w-full h-[500px] object-cover md:object-fit transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-[500px] object-cover pl-12 md:object-fit transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-10">
                 <div className="text-white">
-                  <p className="text-primary font-bold mb-2 uppercase tracking-widest">Advanced Oncology</p>
+                  <p className="text-white font-bold mb-2 uppercase tracking-widest">Advanced Oncology</p>
                   <h4 className="text-2xl font-bold">Bridging the Gap in Cancer Care Accessibility</h4>
                 </div>
               </div>

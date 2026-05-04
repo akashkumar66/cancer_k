@@ -45,34 +45,39 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <section id="faq" className="py-12 bg-white overflow-hidden">
+    <section id="faq" className="pt-12  bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-10">
-          <p className="text-[#3CB3AD] font-semibold mb-2 uppercase tracking-widest text-sm">FAQs for Patients</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-secondary leading-tight">
-            Got questions? We've got answers
-          </h2>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left Column: Heading + Image */}
+          <div className="space-y-10">
+            <div className="text-left">
+              <p className="text-[#3CB3AD] font-semibold mb-2 uppercase tracking-widest text-sm">FAQs for Patients</p>
+              <h2 className="text-4xl md:text-6xl font-extrabold text-secondary leading-[1.1]">
+                Got questions?<br />
+                <span className="text-[#3CB3AD]">We've got answers</span>
+              </h2>
+              <div className="w-20 h-1.5 bg-[#3CB3AD] mt-6 rounded-full" />
+            </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column: Doctor Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative order-2 lg:order-1"
-          >
-            <img
-              src="/docind.png"
-              alt="Doctor"
-              className="w-full max-w-sm mx-auto relative z-10"
-            />
-            {/* Background Decor */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120%] h-[80%] bg-[#3CB3AD]/5 rounded-full blur-3xl -z-10" />
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="relative pt-10 hidden lg:block"
+            >
+              <img
+                src="/faq_image.png"
+                alt="Doctor"
+                className="w-full max-w-md mx-auto relative z-10 drop-shadow-2xl"
+              />
+              {/* Background Decor */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#3CB3AD]/5 rounded-full blur-3xl -z-10" />
+            </motion.div>
+          </div>
 
           {/* Right Column: Accordion */}
-          <div className="order-1 lg:order-2">
+          <div className="lg:pt-24">
+
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}

@@ -47,7 +47,7 @@ const Solution = () => {
             >
               <div className="space-y-6">
                 <div className="flex justify-between items-center pb-6 border-b border-gray-100">
-                  <h3 className="text-2xl font-bold text-secondary">Savings Summary</h3>
+                  <h3 className="text-2xl font-bold text-secondary">Savings Upto* 40%</h3>
                   <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-bold">PREMIUM PLAN</span>
                 </div>
 

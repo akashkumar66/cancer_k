@@ -4,10 +4,10 @@ import { Zap, Truck, Pill, Infinity, Sparkles } from 'lucide-react';
 
 const Solution = () => {
   const highlights = [
-    { icon: <Zap className="text-primary" />, title: "Instant Oncology Off", desc: "Up to 40% off on Chemo & Radiation" },
-    { icon: <Truck className="text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
-    { icon: <Pill className="text-primary" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
-    { icon: <Infinity className="text-primary" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }
+    { icon: <img src="/discounted.png" alt="Discounted" className="w-24 h-24 object-contain" />, title: "Instant Oncology Off", desc: "Up to 40% off on Chemo & Radiation" },
+    { icon: <img src="/freeservice.png" alt="Ambulance" className="w-24 h-24 object-contain" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
+    { icon: <img src="/freepickup.png" alt="Pickup" className="w-24 h-24 object-contain" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
+    { icon: <img src="/nlonmedical.png" alt="No Limit" className="w-24 h-24 object-contain" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }
   ];
 
   return (
@@ -28,7 +28,7 @@ const Solution = () => {
           <div className="grid grid-cols-2 gap-6">
             {highlights.map((item, index) => (
               <div key={index} className="flex flex-col space-y-2 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
-                <div className="bg-primary/10 w-10 h-10 rounded-lg flex items-center justify-center mb-2">
+                <div className=" w-24 h-24 rounded-lg flex items-center justify-center mb-2">
                   {item.icon}
                 </div>
                 <h4 className="font-bold text-secondary">{item.title}</h4>
@@ -40,7 +40,7 @@ const Solution = () => {
 
         <div className="relative">
           <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-[3rem] p-6 md:p-12">
-            <motion.div 
+            <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="w-full bg-white rounded-3xl shadow-premium overflow-hidden border border-white/40 p-6 md:p-8"
@@ -50,7 +50,7 @@ const Solution = () => {
                   <h3 className="text-2xl font-bold text-secondary">Savings Summary</h3>
                   <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-bold">PREMIUM PLAN</span>
                 </div>
-                
+
                 {[
                   { label: "Chemotherapy (6 Cycles)", amount: "₹4,80,000", discount: "₹1,92,000", final: "₹2,88,000" },
                   { label: "PET Scan & Biopsy", amount: "₹25,000", discount: "₹10,000", final: "₹15,000" },

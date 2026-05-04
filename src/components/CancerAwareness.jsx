@@ -28,8 +28,8 @@ const CancerAwareness = () => {
 
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-2xl">
-                  <TrendingUp className="text-primary" size={24} />
+                <div className=" p-1 rounded-full">
+                  <img src="/noagelimit.png" alt="No Age Limit" className="w-24 h-24 object-contain" />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">1 in 9 Indians</h4>
@@ -37,8 +37,8 @@ const CancerAwareness = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-2xl">
-                  <Users className="text-primary" size={24} />
+                <div className="p-1 rounded-2xl">
+                  <img src="/allcancer.png" alt="All Cancer" className="w-24 h-24 object-contain" />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">14.6 Lakh Cases</h4>
@@ -46,8 +46,8 @@ const CancerAwareness = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-2xl">
-                  <IndianRupee className="text-primary" size={24} />
+                <div className=" p-1 rounded-2xl">
+                  <img src="/nlonmedical.png" alt="No Limit" className="w-24 h-24 object-contain" />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">₹5-15 Lakhs</h4>
@@ -55,8 +55,8 @@ const CancerAwareness = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="bg-primary/10 p-3 rounded-2xl">
-                  <Heart className="text-primary" size={24} />
+                <div className="p-1 rounded-2xl">
+                  <img src="/discounted.png" alt="Discounted" className="w-24 h-24 object-contain" />
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">50-60% Savings</h4>

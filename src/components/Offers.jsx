@@ -14,16 +14,16 @@ import {
 } from 'lucide-react';
 
 const offers = [
-  { id: 1, title: 'Works on all Cancer Treatments', icon: ShieldCheck, color: 'text-green-500' },
-  { id: 2, title: 'No Age Limit to Purchase', icon: TrendingUp, color: 'text-blue-500' },
-  { id: 3, title: 'No Limit on Medical Expenditure', icon: Umbrella, color: 'text-yellow-500' },
-  { id: 4, title: 'Effective at any Stage', icon: Target, color: 'text-teal-500' },
-  { id: 5, title: 'Free Ambulance Service', icon: Ambulance, color: 'text-red-500' },
-  { id: 6, title: 'Health Care at Home', icon: Home, color: 'text-orange-500' },
-  { id: 7, title: 'Free Health Counsellor', icon: Headphones, color: 'text-indigo-500' },
-  { id: 8, title: 'Discounted Tests, Treatments & Surgeries', icon: BadgePercent, color: 'text-rose-500' },
-  { id: 9, title: 'Free Cloud Storage of Medical Records', icon: Cloud, color: 'text-sky-500' },
-  { id: 10, title: 'Free Tests Pick-up', icon: Truck, color: 'text-gray-700' },
+  { id: 1, title: 'Works on all Cancer Treatments', icon: ShieldCheck, color: 'text-green-500', links: "/allcancer.png" },
+  { id: 2, title: 'No Age Limit to Purchase', icon: TrendingUp, color: 'text-blue-500', links: "/noagelimit.png" },
+  { id: 3, title: 'No Limit on Medical Expenditure', icon: Umbrella, color: 'text-yellow-500', links: "/nlonmedical.png" },
+  { id: 4, title: 'Effective at any Stage', icon: Target, color: 'text-teal-500', links: "/effectiveage.png" },
+  { id: 5, title: 'Free Ambulance Service', icon: Ambulance, color: 'text-red-500', links: "/freeservice.png" },
+  { id: 6, title: 'Health Care at Home', icon: Home, color: 'text-orange-500', links: "/careathome.png" },
+  { id: 7, title: 'Free Health Counsellor', icon: Headphones, color: 'text-indigo-500', links: "/freecounsellor.png" },
+  { id: 8, title: 'Discounted Tests, Treatments & Surgeries', icon: BadgePercent, color: 'text-rose-500', links: "/discounted.png" },
+  { id: 9, title: 'Free Cloud Storage of Medical Records', icon: Cloud, color: 'text-sky-500', links: "/freestorage.png" },
+  { id: 10, title: 'Free Tests Pick-up', icon: Truck, color: 'text-gray-700', links: "/freepickup.png" },
 ];
 
 const containerVariants = {
@@ -84,8 +84,8 @@ const Offers = () => {
                 variants={itemVariants}
                 className="bg-white hover:bg-primary/20 hover:[#icn]-translate-y-4 rounded-xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
               >
-                <div id='icn' className="transition-all duration-200 mb-4 p-4 bg-gray-50 rounded-full">
-                  <Icon size={40} strokeWidth={1.5} className={offer.color} />
+                <div id='icn' className="transition-all duration-200 mb-4 p-4 bg-white overflow-hidden  rounded-full">
+                  <img src={offer.links} alt="img" className='hover:scale-125 w-24 h-18' />
                 </div>
                 <h3 className="text-sm font-semibold text-[#1A4B46] leading-tight">
                   {offer.title}

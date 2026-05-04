@@ -5,17 +5,17 @@ import { MousePointerClick, Hospital, Banknote, ArrowRight, ArrowDown } from 'lu
 const HowItWorks = () => {
   const steps = [
     {
-      icon: <MousePointerClick className="text-white" size={32} />,
+      icon: <img src="/noagelimit.png" alt="Membership" className="w-16 h-16 object-contain" />,
       title: "Get Oxxy Membership",
       desc: "Activate your cancer support plan instantly. No medical tests required for enrollment."
     },
     {
-      icon: <Hospital className="text-white" size={32} />,
+      icon: <img src="/freecounsellor.png" alt="Counsellor" className="w-16 h-16 object-contain" />,
       title: "Consult Oncologists",
       desc: "Visit any of our 1000+ partner oncology centers and specialized cancer hospitals."
     },
     {
-      icon: <Banknote className="text-white" size={32} />,
+      icon: <img src="/discounted.png" alt="Savings" className="w-16 h-16 object-contain" />,
       title: "Save on Treatments",
       desc: " Get up to 40% instant discount on chemo, scans, and surgery."
     }
@@ -40,7 +40,7 @@ const HowItWorks = () => {
               viewport={{ once: true }}
               className="flex flex-col items-center text-center group flex-1"
             >
-              <div className="w-24 h-24 bg-secondary rounded-[2rem] flex items-center justify-center mb-8 shadow-premium group-hover:bg-primary transition-colors duration-500 relative">
+              <div className="w-24 h-24 bg-white rounded-[2rem] flex items-center justify-center mb-8 shadow-premium group-hover:bg-gray-50 transition-colors duration-500 relative">
                 <div className="absolute -top-3 -right-3 w-10 h-10 bg-accent rounded-full flex items-center justify-center font-bold text-white border-4 border-white">
                   {index + 1}
                 </div>

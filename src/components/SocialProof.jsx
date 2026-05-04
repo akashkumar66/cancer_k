@@ -8,19 +8,19 @@ const SocialProof = () => {
       name: "Meera Iyer",
       role: "Breast Cancer Survivor",
       content: "My treatment involved 12 cycles of chemo. Oxxy saved us over ₹3 Lakhs. But more than money, their priority booking at Tata Memorial was a blessing.",
-      image: "https://randomuser.me/api/portraits/women/32.jpg"
+      image: "women1.png"
     },
     {
       name: "Suresh Prabhu",
       role: "Lung Cancer Patient",
       content: "Insurance rejected my claim because I was a former smoker. Oxxy didn't ask any questions. They covered my radiation from day one.",
-      image: "https://randomuser.me/api/portraits/men/44.jpg"
+      image: "men.png"
     },
     {
       name: "Dr. Anjali Gupta",
       role: "Oncologist",
       content: "I recommend Oxxy to my patients who are struggling with treatment costs. It's the only platform that truly covers pre-existing cancers immediately.",
-      image: "https://randomuser.me/api/portraits/women/68.jpg"
+      image: "women2.png"
     }
   ];
 

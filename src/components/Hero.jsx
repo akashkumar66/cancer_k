@@ -339,21 +339,21 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative"
         >
-          <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl shadow-2xl">
             <img
-              src="/cancerpic.jpg"
+              src="/reseptionist.avif"
               alt="Happy Indian Family"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-3xl"
             />
             {/* Float Cards */}
-            <div className="absolute top-10 -left-6 bg-white p-4 rounded-2xl shadow-premium animate-float">
+            <div className="absolute top-2 -left-6 bg-white p-4 rounded-2xl shadow-premium animate-float">
               <div className="flex items-center space-x-3">
                 <div className="bg-accent/10 p-2 rounded-lg">
                   <ShieldPlus className="text-accent" size={24} />
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 font-bold uppercase tracking-wider">Instant Saving</p>
-                  <p className="text-lg font-bold text-secondary">₹45,000 Saved</p>
+                  <p className="text-lg font-bold text-secondary">Save Upto ₹100000*</p>
                 </div>
               </div>
             </div>

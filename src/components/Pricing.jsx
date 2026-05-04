@@ -10,15 +10,15 @@ const Pricing = () => {
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-4xl font-bold text-secondary mb-4">Affordable Plans for Every Family</h2>
         <p className="text-xl text-gray-600 mb-8">Choose a plan that fits your budget and healthcare needs. Save thousands on every hospital visit.</p>
-        
+
         {/* Billing Switch */}
         <div className="flex items-center justify-center space-x-4">
           <span className={`text-lg font-semibold ${billingCycle === 'monthly' ? 'text-secondary' : 'text-gray-400'}`}>Monthly</span>
-          <button 
+          <button
             onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
             className="w-16 h-8 bg-primary/20 rounded-full relative p-1 transition-colors"
           >
-            <motion.div 
+            <motion.div
               animate={{ x: billingCycle === 'monthly' ? 0 : 32 }}
               className="w-6 h-6 bg-primary rounded-full shadow-md"
             />
@@ -30,11 +30,11 @@ const Pricing = () => {
       </div>
 
       <div className="flex justify-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative w-full max-w-2xl bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden"
+          className="relative w-full max-w-2xl bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden pointer-events-none select-none"
         >
           {/* Header Image/Icon Section from User Image */}
           <div className="bg-secondary p-3 flex justify-center relative">
@@ -52,16 +52,16 @@ const Pricing = () => {
             </div>
 
             <div className="bg-gray-100 py-2 px-6 rounded-xl mb-6 inline-block">
-              <p className="text-md font-bold text-secondary uppercase tracking-wider">GUARANTEED SAVINGS of Rs. 200000*</p>
+              <p className="text-md font-bold text-secondary uppercase tracking-wider">GUARANTEED SAVINGS upto 1 lakh*</p>
             </div>
 
             <div className="space-y-3 text-left max-w-lg mx-auto mb-8">
               {[
-                { text: "Works on Cancer Patients at any Stage", bold: true },
-                { text: "No Age Limit", bold: true },
-                { text: "No Medical Screening Needed", bold: true },
+                { text: "Works on Cancer Patients at any Stage*", bold: true },
+                { text: "No Age Limit*", bold: true },
+                { text: "No Medical Screening Needed*", bold: true },
                 { text: "Discounts on Medicines, Chemotherapy, Radiation-therapy & Surgery", bold: false },
-                { text: "40%* Discounts on All Medical Bills with No Upper Limit of the Bill Value.", bold: false },
+                { text: "Discounts on All Medical Bills more than 1 laks with No Upper Limit of the Bill Value.", bold: false },
                 { text: "Use Unlimited Number of Times", bold: false },
                 { text: "Valid on Cancer & Every Other Disease", bold: false },
                 { text: "Valid on All Pre-Existing Diseases", bold: false },
@@ -83,7 +83,7 @@ const Pricing = () => {
               <button className="bg-black text-white py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition-all uppercase tracking-widest">
                 KNOW MORE
               </button>
-              <button 
+              <button
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="btn-gradient py-4 rounded-full font-bold text-lg shadow-premium uppercase tracking-widest"
               >

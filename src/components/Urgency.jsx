@@ -61,7 +61,10 @@ const Urgency = () => {
             ))}
           </div>
 
-          <button className="hidden lg:block bg-white text-primary font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+          <button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="hidden lg:block bg-white text-primary font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+          >
             Claim Offer Now
           </button>
         </div>

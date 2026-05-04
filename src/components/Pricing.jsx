@@ -83,7 +83,10 @@ const Pricing = () => {
               <button className="bg-black text-white py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition-all uppercase tracking-widest">
                 KNOW MORE
               </button>
-              <button className="btn-gradient py-4 rounded-full font-bold text-lg shadow-premium uppercase tracking-widest">
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="btn-gradient py-4 rounded-full font-bold text-lg shadow-premium uppercase tracking-widest"
+              >
                 BUY NOW
               </button>
             </div>

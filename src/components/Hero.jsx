@@ -13,6 +13,44 @@ const Hero = () => {
     treatments: "Full coverage for chemotherapy, radiation therapy, complex surgeries, and post-operative care."
   };
 
+  const [displayText, setDisplayText] = useState('');
+  const fullText = "Cancer Detection";
+
+  React.useEffect(() => {
+    let i = 0;
+    let isDeleting = false;
+    let timeoutId;
+
+    const type = () => {
+      const fullText = "Cancer Detection";
+      setDisplayText(isDeleting
+        ? fullText.substring(0, i - 1)
+        : fullText.substring(0, i + 1)
+      );
+
+      if (!isDeleting) {
+        i++;
+      } else {
+        i--;
+      }
+
+      let typeSpeed = isDeleting ? 75 : 150;
+
+      if (!isDeleting && i === fullText.length) {
+        typeSpeed = 2000; // Pause at end
+        isDeleting = true;
+      } else if (isDeleting && i === 0) {
+        isDeleting = false;
+        typeSpeed = 500; // Pause before restarting
+      }
+
+      timeoutId = setTimeout(type, typeSpeed);
+    };
+
+    type();
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   const handlePopup = (key) => {
     if (activePopup === key) setActivePopup(null);
     else setActivePopup(key);
@@ -36,7 +74,11 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold leading-tight text-secondary mb-6">
-            Real Support <span className="text-primary text-4xl">When It Matters Most — Even After</span> Cancer Detection
+            Real Support <span className="text-primary text-4xl md:text-4xl block md:inline mb-2 md:mb-0">When It Matters Most — Even After <br /></span>
+            <span className="inline-block whitespace-nowrap">
+              {displayText}
+              <span className="inline-block w-1 h-8 md:h-12 bg-primary ml-1 animate-pulse" style={{ verticalAlign: 'middle' }}></span>
+            </span>
           </h1>
 
           <p className=" text-xl text-gray-600 mb-14 leading-relaxed">
@@ -73,6 +115,15 @@ const Hero = () => {
                       <Mail size={24} />
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.complete}</p>
+                    <button
+                      onClick={() => {
+                        setActivePopup(null);
+                        document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
+                    >
+                      Plans
+                    </button>
                   </div>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 border-[10px] border-transparent border-t-white drop-shadow-sm"></div>
                 </motion.div>
@@ -111,6 +162,15 @@ const Hero = () => {
                         <Mail size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.stage}</p>
+                      <button
+                        onClick={() => {
+                          setActivePopup(null);
+                          document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
+                      >
+                        Plans
+                      </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
                   </motion.div>
@@ -148,6 +208,15 @@ const Hero = () => {
                         <Mail size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.covered}</p>
+                      <button
+                        onClick={() => {
+                          setActivePopup(null);
+                          document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
+                      >
+                        Plans
+                      </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
                   </motion.div>
@@ -185,6 +254,15 @@ const Hero = () => {
                         <Mail size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.moneyback}</p>
+                      <button
+                        onClick={() => {
+                          setActivePopup(null);
+                          document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
+                      >
+                        Plans
+                      </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
                   </motion.div>
@@ -222,6 +300,15 @@ const Hero = () => {
                         <Mail size={20} />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.treatments}</p>
+                      <button
+                        onClick={() => {
+                          setActivePopup(null);
+                          document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="mt-4 px-8 py-2 bg-primary text-white rounded-full font-bold text-sm hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
+                      >
+                        Plans
+                      </button>
                     </div>
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-[8px] border-transparent border-t-white drop-shadow-sm"></div>
                   </motion.div>
@@ -230,7 +317,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className=" grid grid-cols-2 sm:grid-cols-3 gap-6">
+          {/* <div className=" grid grid-cols-2 sm:grid-cols-3 gap-6">
             <div className="flex items-center space-x-2 text-gray-700">
               <CheckCircle2 className="text-accent" size={20} />
               <span className="font-medium">1000+ Hospitals</span>
@@ -243,7 +330,7 @@ const Hero = () => {
               <CheckCircle2 className="text-accent" size={20} />
               <span className="font-medium">Nationwide Network</span>
             </div>
-          </div>
+          </div> */}
         </motion.div>
 
         <motion.div

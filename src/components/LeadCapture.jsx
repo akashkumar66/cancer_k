@@ -12,7 +12,7 @@ const LeadCapture = () => {
   };
 
   return (
-    <section className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-white">
       <div className="bg-background-soft rounded-[3rem] p-8 md:p-20 relative overflow-hidden border border-gray-100">
         {/* Background Decor */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />

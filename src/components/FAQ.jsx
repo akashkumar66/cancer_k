@@ -63,7 +63,7 @@ const FAQ = () => {
             className="relative order-2 lg:order-1"
           >
             <img
-              src="/doctor2.jpg"
+              src="/docind.png"
               alt="Doctor"
               className="w-full max-w-sm mx-auto relative z-10"
             />

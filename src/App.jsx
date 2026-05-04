@@ -12,6 +12,7 @@ import Pricing from './components/Pricing';
 import SocialProof from './components/SocialProof';
 import Urgency from './components/Urgency';
 import LeadCapture from './components/LeadCapture';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import ExitIntentPopup from './components/ExitIntentPopup';
 import StickyCTA from './components/StickyCTA';
@@ -41,15 +42,16 @@ function App() {
         <FeaturesGrid />
         <CancerAwareness />
         <Solution />
-        <HowItWorks />
         <Benefits />
+        <HowItWorks />
         <Pricing />
         <SocialProof />
         <Urgency />
+        <FAQ />
         <LeadCapture />
       </main>
       <Footer />
-      
+
       {showExitPopup && <ExitIntentPopup onClose={() => setShowExitPopup(false)} />}
       <StickyCTA />
     </div>

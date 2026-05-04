@@ -1,62 +1,118 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Clock, Heart, Globe, TestTube, Baby } from 'lucide-react';
+import { ClipboardCheck, TrendingUp, FileText, History, Infinity, Stethoscope } from 'lucide-react';
 
 const Benefits = () => {
-  const benefits = [
+  const leftBenefits = [
     {
-      icon: <img src="/allcancer.png" alt="All Cancers" className="w-16 h-16 object-contain" />,
-      title: "All Cancers Covered",
-      desc: "Valid for Breast, Lung, Oral, Blood, and all other types of cancer."
+      icon: <ClipboardCheck className="text-teal-500" size={40} />,
+      title: "Valid on all Pre-Existing Diseases",
+      desc: "Oxxy works on all pre-existing diseases like Diabetes, Cancer etc."
     },
     {
-      icon: <img src="/effectiveage.png" alt="Immediate" className="w-16 h-16 object-contain" />,
-      title: "Immediate Start",
-      desc: "No waiting period. Get discounts from the very first day of membership."
+      icon: <TrendingUp className="text-teal-500" size={40} />,
+      title: "No Age Limit",
+      desc: "Oxxy Health services can be availed by any age group from 0 to 120 years."
     },
     {
-      icon: <img src="/allcancer.png" alt="Pre-existing" className="w-16 h-16 object-contain" />,
-      title: "Pre-existing Cancer",
-      desc: "Already diagnosed? No problem. We cover all pre-existing conditions."
+      icon: <FileText className="text-teal-500" size={40} />,
+      title: "No Limit on Medical Expenses",
+      desc: "Oxxy works seamlessly on all your medical expenses, from bill of Rs. 5000 to Rs. 5 crores."
+    }
+  ];
+
+  const rightBenefits = [
+    {
+      icon: <History className="text-teal-500" size={40} />,
+      title: "Works on OPD & IPD",
+      desc: "Most Medical Protections work after 24 Hours Hospitalization. Oxxy caters from Small Tests to Expensive Medical Surgeries."
     },
     {
-      icon: <img src="/freepickup.png" alt="Diagnostics" className="w-16 h-16 object-contain" />,
-      title: "Onco-Diagnostics",
-      desc: "Discounts on PET-CT, MRI, Biopsy, and specialized lab tests."
+      icon: <Infinity className="text-teal-500" size={40} />,
+      title: "Unlimited Usage",
+      desc: "Use unlimited time. Get discounts on any Tests, Treatments & Surgeries."
     },
     {
-      icon: <img src="/noagelimit.png" alt="No Age Limit" className="w-16 h-16 object-contain" />,
-      title: "No Upper Age Limit",
-      desc: "Support for everyone from children to senior citizens up to 120 years."
-    },
-    {
-      icon: <img src="/careathome.png" alt="Holistic" className="w-16 h-16 object-contain" />,
-      title: "Holistic Care",
-      desc: "Discounts on supportive care, nutrition, and post-treatment recovery."
+      icon: <Stethoscope className="text-teal-500" size={40} />,
+      title: "Includes Eye, Dental & Derma",
+      desc: "Also get discounts on eye surgeries, dental procedures, derma & cosmetic treatments."
     }
   ];
 
   return (
-    <section id="benefits" className="section-padding bg-background-soft">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl font-bold text-secondary mb-6">Why 2 Crore+ Indians Trust Us</h2>
-        <p className="text-xl text-gray-600">CareSave is designed to provide complete peace of mind for every family member, from 0 to 120 years old.</p>
-      </div>
+    <section id="benefits" className="py-20 bg-[#F4F7F6]">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <p className="text-[#3CB3AD] font-semibold mb-2 uppercase tracking-widest text-sm">The Amazing Benefits</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A3C34] leading-tight">
+            Oxxy Offers More <span className="text-gray-500 font-normal">Than Any Health Insurance</span>
+          </h2>
+        </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {benefits.map((benefit, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            className="p-8 bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col items-start"
-          >
-            <div className="bg-white shadow-sm rounded-2xl mb-6">
-              {benefit.icon}
-            </div>
-            <h3 className="text-2xl font-bold text-secondary mb-4">{benefit.title}</h3>
-            <p className="text-gray-600 leading-relaxed">{benefit.desc}</p>
-          </motion.div>
-        ))}
+        <div className="grid lg:grid-cols-3 gap-8 items-center">
+          {/* Left Column */}
+          <div className="space-y-8">
+            {leftBenefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-2xl shadow-xl flex items-start space-x-6 hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="shrink-0 pt-1">
+                  {benefit.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#1A3C34] mb-2">{benefit.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{benefit.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Center Image */}
+          <div className="relative flex justify-center order-first lg:order-none">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative z-10"
+            >
+              <img
+                src="/center_image.png"
+                alt="Doctor"
+                className="w-full max-w-md h-auto object-contain mx-auto"
+              />
+            </motion.div>
+            {/* Background Circle Decor */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#3CB3AD]/5 rounded-full blur-3xl -z-10" />
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-8">
+            {rightBenefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-2xl shadow-xl flex items-start space-x-6 hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="shrink-0 pt-1">
+                  {benefit.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-[#1A3C34] mb-2">{benefit.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{benefit.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

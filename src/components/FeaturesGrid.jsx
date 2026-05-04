@@ -51,7 +51,7 @@ const FeaturesGrid = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl p-8 flex flex-col items-center text-center relative group hover:shadow-2xl transition-all duration-300"
+              className="bg-white rounded-3xl p-2 flex flex-col items-center text-center relative group hover:shadow-2xl transition-all duration-300"
             >
               <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}

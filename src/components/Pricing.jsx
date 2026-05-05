@@ -9,7 +9,7 @@ const Pricing = () => {
     <section id="plans" className="section-padding bg-white relative">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-4xl font-bold text-secondary mb-4">Affordable Plan for Every Family</h2>
-        <p className="text-xl text-gray-600">Choose a plan that fits your budget and healthcare needs. Save thousands on every hospital visit.</p>
+        <p className="text-xl text-gray-600">A best and affordable plan that fits for everybody.</p>
       </div>
 
       <div className="flex justify-center">

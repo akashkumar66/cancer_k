@@ -23,7 +23,7 @@ const AvailsAt = () => {
             x: [0, -6400], // 40 images * 160px (w-32 + gap-8)
           }}
           transition={{
-            duration: 30, // Adjust speed: lower is faster
+            duration: 100, // Even slower to match other sections
             repeat: Infinity,
             ease: "linear",
           }}

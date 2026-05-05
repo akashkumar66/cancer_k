@@ -10,7 +10,8 @@ import {
   Headphones,
   BadgePercent,
   Cloud,
-  Truck
+  Truck,
+  Car
 } from 'lucide-react';
 
 const offers = [
@@ -18,7 +19,7 @@ const offers = [
   { id: 2, title: 'No Age Limit to Purchase', icon: TrendingUp, color: 'text-blue-500', links: "/noagelimit.png" },
   { id: 3, title: 'No Limit on Medical Expenditure', icon: Umbrella, color: 'text-yellow-500', links: "/nlonmedical.png" },
   { id: 4, title: 'Effective at any Stage', icon: Target, color: 'text-teal-500', links: "/effectiveage.png" },
-  { id: 5, title: 'Free Medical delivery Service', icon: Ambulance, color: 'text-red-500', links: "/freepickup.png" },
+  { id: 5, title: 'Free Medical delivery Service', icon: Car, color: 'text-red-500', links: "/freecar.png" },
   { id: 6, title: 'Health Care at Home', icon: Home, color: 'text-orange-500', links: "/careathome.png" },
   { id: 7, title: 'Free Health Counsellor', icon: Headphones, color: 'text-indigo-500', links: "/freecounsellor.png" },
   { id: 8, title: 'Discounted Tests, Treatments & Surgeries', icon: BadgePercent, color: 'text-rose-500', links: "/discounted.png" },

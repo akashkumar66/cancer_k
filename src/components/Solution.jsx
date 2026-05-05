@@ -4,7 +4,7 @@ import { Zap, Truck, Pill, Infinity, Sparkles, TrendingDown, Hospital } from 'lu
 
 const Solution = () => {
   const highlights = [
-    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Oncology Off", desc: "Up to 40% off on Chemo & Radiation" },
+    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology Off", desc: "Up to 40% off on Chemo & Radiation" },
     // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
     { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
     { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }

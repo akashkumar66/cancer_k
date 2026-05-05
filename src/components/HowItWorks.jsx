@@ -17,7 +17,7 @@ const HowItWorks = () => {
     {
       icon: <IndianRupee className="w-10 h-10 text-primary" />,
       title: "Save on Treatments",
-      desc: " Get up to 40% instant discount on Chemo,Radio,Scan,Surgery & Medicine."
+      desc: " Get up to 40% instant discount on Chemo, Radio, Scan, Surgery & Medicine."
     }
   ];
 

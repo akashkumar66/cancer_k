@@ -43,7 +43,7 @@ const Pricing = () => {
                 { text: "Works on Cancer Patients at any Stage*", bold: true },
                 { text: "No Age Limit*", bold: true },
                 { text: "No Medical Screening Needed*", bold: true },
-                { text: "Discounts on Medicines, Chemotherapy, Radiation-therapy & Surgery", bold: false },
+                { text: "Discounts on Medicines, Chemotherapy, Radiology & Surgery", bold: false },
                 { text: "Discounts on All Medical Bills upto 40% with No Upper Limit of the Bill Value.", bold: false },
                 { text: "Use Unlimited Number of Times", bold: false },
                 { text: "Valid on Cancer & Every Other Disease", bold: false },

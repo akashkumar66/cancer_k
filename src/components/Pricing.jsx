@@ -34,9 +34,9 @@ const Pricing = () => {
               <p className="text-gray-500 font-semibold text-sm">(54,000 Annually)</p>
             </div>
 
-            <div className="bg-gray-100 py-2 px-6 rounded-xl mb-6 inline-block">
+            {/* <div className="bg-gray-100 py-2 px-6 rounded-xl mb-6 inline-block">
               <p className="text-md font-bold text-secondary tracking-wider">Guaranteed savings upto 1 lakh*</p>
-            </div>
+            </div> */}
 
             <div className="space-y-3 text-left max-w-lg mx-auto mb-8">
               {[

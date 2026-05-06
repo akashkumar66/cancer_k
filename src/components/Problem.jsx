@@ -24,7 +24,7 @@ const Problem = () => {
   return (
     <section className="section-padding bg-white">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl font-bold text-secondary mb-6">Why Modern Healthcare is Failing You</h2>
+        <h2 className="text-4xl premium-heading text-secondary mb-6">Why Modern Healthcare is Failing You</h2>
         <p className="text-xl text-gray-600">The traditional healthcare system is designed to benefit hospitals, not patients. Here's the reality most families face:</p>
       </div>
 

@@ -28,9 +28,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'Roboto', 'sans-serif'],
-        heading: ['Poppins', 'Inter', 'sans-serif'],
-        body: ['Open Sans', 'Roboto', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         'xl': '1rem',

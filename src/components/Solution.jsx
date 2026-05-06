@@ -18,7 +18,7 @@ const Solution = () => {
             <Sparkles size={18} />
             <span>A Smarter Alternative to Insurance</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
+          <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-8">
             Oxxy: The <span className="text-primary">Cancer Support Network</span> You Can Rely On
           </h2>
           <p className="text-xl text-gray-600 mb-10 leading-relaxed">

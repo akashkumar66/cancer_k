@@ -7,11 +7,21 @@
 }
 
 body {
-  @apply font-body antialiased;
+  @apply font-body antialiased text-gray-700 leading-relaxed;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-heading tracking-tight;
+  @apply font-heading tracking-[-0.03em] text-secondary font-bold;
+  text-wrap: balance;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.premium-heading {
+  @apply tracking-[-0.04em] font-extrabold leading-[1.1];
 }
 
 .glass-card {

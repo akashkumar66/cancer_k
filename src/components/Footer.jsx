@@ -18,9 +18,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-all">
+                <div key={i} className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary">
                   <Icon size={20} />
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
             <ul className="space-y-4">
               {["How it Works", "About Oxxy", "Network Hospitals", "Medical Camps", "Careers", "Media Coverage"].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-gray-500 hover:text-primary transition-colors">{link}</a>
+                  <span className="text-gray-500">{link}</span>
                 </li>
               ))}
             </ul>
@@ -41,9 +41,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold text-secondary mb-6 uppercase tracking-wider">Support</h4>
             <ul className="space-y-4">
-              {["FAQ's", "Patient Stories", "Terms of Service", "Privacy Policy", "Refund Policy", "Contact Us"].map((link) => (
+              {["Patient Stories", "Terms of Service", "Privacy Policy", "Refund Policy", "Contact Us"].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-gray-500 hover:text-primary transition-colors">{link}</a>
+                  <span className="text-gray-500">{link}</span>
                 </li>
               ))}
             </ul>

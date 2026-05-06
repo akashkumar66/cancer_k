@@ -107,13 +107,12 @@ const SocialProof = () => {
                   <p className="text-gray-600 text-sm mb-8 flex-grow leading-relaxed h-12 overflow-hidden px-2">
                     {media.desc}
                   </p>
-                  <a
-                    href="#"
-                    className="bg-[#009688] text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center space-x-3 transition-all duration-300 hover:bg-[#00796B] hover:shadow-lg active:scale-95"
+                  <div
+                    className="bg-[#009688] text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center space-x-3"
                   >
                     <span className="w-6 h-6 bg-white/20 text-white rounded-full flex items-center justify-center text-xs backdrop-blur-sm">+</span>
                     <span>Read Article</span>
-                  </a>
+                  </div>
                 </div>
               ))}
             </motion.div>

@@ -73,7 +73,7 @@ const Hero = () => {
             <span>India's Largest Healthcare Network</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-secondary mb-6">
+          <h1 className="text-4xl md:text-6xl premium-heading text-secondary mb-6">
             Real Support <span className="text-primary text-4xl md:text-4xl block md:inline mb-2 md:mb-0">When It Matters Most — Even After <br /></span>
             <span className="inline-block whitespace-nowrap">
               {displayText}

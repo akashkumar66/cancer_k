@@ -44,7 +44,7 @@ const Benefits = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-[#3CB3AD] font-semibold mb-2 uppercase tracking-widest text-sm">The Amazing Benefits</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A3C34] leading-tight">
+          <h2 className="text-4xl md:text-5xl premium-heading text-[#1A3C34]">
             Oxxy Offers More <span className="text-gray-500 font-normal">Than Any Health Insurance</span>
           </h2>
         </div>

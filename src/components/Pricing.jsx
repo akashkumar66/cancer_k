@@ -8,7 +8,7 @@ const Pricing = () => {
   return (
     <section id="plans" className="section-padding bg-white relative">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-4xl font-bold text-secondary mb-4">Affordable Plan for Every Family</h2>
+        <h2 className="text-4xl premium-heading text-secondary mb-4">Affordable Plan for Every Family</h2>
         <p className="text-xl text-gray-600">A best and affordable plan that fits for everybody.</p>
       </div>
 

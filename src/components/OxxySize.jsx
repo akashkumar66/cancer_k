@@ -26,7 +26,7 @@ const OxxySize = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-4">Oxxy size</h2>
-          <p className="text-xl text-gray-500">India's largest healthcare network</p>
+          <p className="text-xl text-gray-500">India's largest Healthcare network</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

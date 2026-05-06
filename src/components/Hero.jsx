@@ -10,7 +10,7 @@ const Hero = () => {
     stage: "Whether early detection or advanced stages, our  are designed to provide maximum benefits regardless of your current condition.",
     covered: "From common to rare types, our coverage extends across all known Cancer variations for complete peace of mind.",
     moneyback: "We offer a money-back guarantee to ensure your complete satisfaction and peace of mind.",
-    treatments: "Full coverage for chemotherapy, radiation therapy, complex surgeries, and post-operative care."
+    treatments: "Full coverage for Chemotherapy, Radiation therapy, complex surgeries, and post-operative care."
   };
 
   const [displayText, setDisplayText] = useState('');
@@ -57,18 +57,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative pt-32 overflow-hidden">
+    <section className="relative pt-20 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto pt-4 px-6 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-4 py-2 rounded-full mb-6 font-semibold">
+          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-4 py-2  rounded-full mb-2 font-semibold">
             <Activity size={18} />
             <span>India's largest healthcare network</span>
           </div>
@@ -94,7 +94,7 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                   <Handshake size={24} />
                 </div>
-                <span className="font-semibold">Complete cancer support</span>
+                <span className="font-semibold">Complete Cancer support</span>
               </div>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
@@ -104,7 +104,7 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 10, scale: 0.95 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                  className="absolute bottom-full left-0 right-0 mb-4 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
+                  className="absolute bottom-full left-0 right-0 mb-2 bg-white p-5 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-primary/10 z-30"
                 >
                   <button
                     onClick={(e) => { e.stopPropagation(); setActivePopup(null); }}
@@ -191,7 +191,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Layers size={18} />
                   </div>
-                  <span className="font-medium leading-tight">All cancer covered</span>
+                  <span className="font-medium leading-tight">All Cancer covered</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -287,7 +287,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Stethoscope size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Works on chemo, radiation and surgeries</span>
+                  <span className="font-medium leading-tight">Works on Chemo, Radiation and surgeries</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>

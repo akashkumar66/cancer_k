@@ -21,14 +21,14 @@ const LeadCapture = () => {
           <div>
             <h2 className="text-4xl font-bold text-secondary mb-6">Reduce your Cancer treatment costs today</h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Don't let medical bills come in the way of your recovery. Join India's largest cancer support network.
+              Don't let medical bills come in the way of your recovery. Join India's largest Cancer support network.
             </p>
 
             <ul className="space-y-4">
               {[
-                "Works on chemo, radiology & surgery",
+                "Works on Chemo, Radiology & Surgery",
                 "No medical tests or waiting periods",
-                "Valid for all pre-existing cancers"
+                "Valid for all pre-existing Cancers"
               ].map((text, i) => (
                 <li key={i} className="flex items-center space-x-3 text-secondary font-semibold">
                   <CheckCircle className="text-primary" size={20} />
@@ -49,7 +49,7 @@ const LeadCapture = () => {
                   <CheckCircle className="text-accent" size={40} />
                 </div>
                 <h3 className="text-2xl font-bold text-secondary mb-2">Thank you!</h3>
-                <p className="text-gray-500">A specialized cancer support advisor will call you within 15 minutes.</p>
+                <p className="text-gray-500">A specialized Cancer support advisor will call you within 15 minutes.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">

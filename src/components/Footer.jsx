@@ -14,13 +14,30 @@ const Footer = () => {
               </div>
             </div>
             <p className=" text-gray-500 leading-relaxed">
-              India's leading healthcare savings platform helping families reduce their medical expenditure through pre-negotiated network rates.
+              India's leading healthcare savings platform helping families reduce their medical expenditure through pre negotiated network rates.
             </p>
             <div className="flex space-x-4">
-              {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
-                <div key={i} className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary">
-                  <Icon size={20} />
-                </div>
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/people/Oxxy-HealthCare-India/61571739654447/" },
+                { Icon: Instagram, href: "https://www.instagram.com/accounts/login/?next=%2Foxxyhealth%2F&source=omni_redirect" },
+                { Icon: Twitter, href: null },
+                { Icon: Youtube, href: "https://www.youtube.com/@OxxyHealthcare" }
+              ].map(({ Icon, href }, i) => (
+                href ? (
+                  <a
+                    key={i}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-all cursor-pointer"
+                  >
+                    <Icon size={20} />
+                  </a>
+                ) : (
+                  <div key={i} className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary">
+                    <Icon size={20} />
+                  </div>
+                )
               ))}
             </div>
           </div>

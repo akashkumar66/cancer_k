@@ -14,14 +14,14 @@ import {
 } from 'lucide-react';
 
 const offers = [
-  { id: 1, title: 'Works on all cancer treatments', icon: ShieldCheck, color: 'text-green-500', links: "/allcancer.png" },
+  { id: 1, title: 'Works on all Cancer treatments', icon: ShieldCheck, color: 'text-green-500', links: "/allcancer.png" },
   { id: 2, title: 'No age limit to purchase', icon: TrendingUp, color: 'text-blue-500', links: "/noagelimit.png" },
   { id: 3, title: 'No limit on medical expenditure', icon: Umbrella, color: 'text-yellow-500', links: "/nlonmedical.png" },
   { id: 4, title: 'Effective at any stage', icon: Target, color: 'text-teal-500', links: "/effectiveage.png" },
   { id: 5, title: 'Free medical delivery service', icon: Car, color: 'text-red-500', links: "/freepickup.png" }, // ✅ updated icon
   { id: 6, title: 'Health care at home', icon: Home, color: 'text-orange-500', links: "/careathome.png" },
   { id: 7, title: 'Free health counsellor', icon: Headphones, color: 'text-indigo-500', links: "/freecounsellor.png" },
-  { id: 8, title: 'Discounted tests, treatments & surgeries', icon: BadgePercent, color: 'text-rose-500', links: "/discounted.png" },
+  { id: 8, title: 'Discounted Tests, Treatments & Surgeries', icon: BadgePercent, color: 'text-rose-500', links: "/discounted.png" },
   { id: 9, title: 'Free cloud storage of medical records', icon: Cloud, color: 'text-sky-500', links: "/freestorage.png" },
   { id: 10, title: 'Free tests pick-up', icon: Truck, color: 'text-gray-700', links: "/freepickup.png" },
 ];

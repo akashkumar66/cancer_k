@@ -4,7 +4,7 @@ import { Zap, Truck, Pill, Infinity, Sparkles, TrendingDown, Hospital } from 'lu
 
 const Solution = () => {
   const highlights = [
-    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology savings", desc: "Up to 40% off on chemo & radiology" },
+    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology savings", desc: "Up to 40% off on Chemo & Radiology" },
     // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
     { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-medicines", desc: "Free home delivery of specialized meds" },
     { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No treatment cap", desc: "Unlimited usage for long-term care" }
@@ -22,7 +22,7 @@ const Solution = () => {
             Oxxy: The <span className="text-primary">Cancer support network</span> you can rely on
           </h2>
           <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-            We've built India's most robust oncology network. From PET scans and biopsies to complex surgeries and immunotherapy, we ensure you get the best care at pre-negotiated, affordable rates.
+            We've built India's most robust oncology network. From PET Scans and Biopsies to complex Surgeries and Immunotherapy, we ensure you get the best care at pre-negotiated, affordable rates.
           </p>
 
           <div className="grid grid-cols-2 gap-6">

@@ -7,17 +7,17 @@ const Problem = () => {
     {
       icon: <Stethoscope className="w-12 h-12 text-red-500" />,
       title: "Expensive Radiology",
-      description: "Cancer treatments like chemotherapy and radiology can cost lakhs per session, often exceeding insurance limits."
+      description: "Cancer treatments like Chemotherapy and Radiology can cost lakhs per session, often exceeding insurance limits."
     },
     {
       icon: <Clock className="w-12 h-12 text-red-500" />,
       title: "Wait & exclusion",
-      description: "Most policies have a 2-4 year waiting period for cancer, leaving patients vulnerable when they need help now."
+      description: "Most policies have a 2-4 year waiting period for Cancer, leaving patients vulnerable when they need help now."
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-red-500" />,
       title: "Savings wipeout",
-      description: "A full cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
+      description: "A full Cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
     }
   ];
 

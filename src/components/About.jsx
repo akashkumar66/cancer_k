@@ -21,7 +21,7 @@ const About = () => {
               Mission to simplify <span className="text-primary">Cancer care</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
-              Overall, Oxxy aims to simplify the Cancer treatment journey by providing complete support from Diagnosis to post treatment care while significantly reducing medical expenses, allowing patients and their families to focus on recovery and well being.
+              Overall, Oxxy aims to simplify the cancer treatment journey by providing complete support from diagnosis to post treatment care while significantly reducing medical expenses, allowing patients and their families to focus on recovery and well being.
             </p>
 
             <div className="space-y-4">

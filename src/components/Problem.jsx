@@ -7,17 +7,17 @@ const Problem = () => {
     {
       icon: <Stethoscope className="w-12 h-12 text-red-500" />,
       title: "Expensive Radiology",
-      description: "Cancer treatments like Chemotherapy and Radiology can cost lakhs per session, often exceeding insurance limits."
+      description: "Cancer treatments like chemotherapy and radiology can cost lakhs per session, often exceeding insurance limits."
     },
     {
       icon: <Clock className="w-12 h-12 text-red-500" />,
       title: "Wait & exclusion",
-      description: "Most policies have a 2-4 year waiting period for Cancer, leaving patients vulnerable when they need help now."
+      description: "Most policies have a 2-4 year waiting period for cancer, leaving patients vulnerable when they need help now."
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-red-500" />,
       title: "Savings wipeout",
-      description: "A full Cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
+      description: "A full cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
     }
   ];
 
@@ -49,7 +49,7 @@ const Problem = () => {
         <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl font-bold text-white mb-6">"My wife's <span className='italic'>Chemotherapy</span> was costing ₹80,000 per cycle. Without <span className='italic'>Oxxy</span>, we would have had to sell our ancestral home."</h3>
-            <p className="text-white/70 text-lg">Arvind mehta, retired teacher</p>
+            <p className="text-white/70 text-lg">Arvind mehta, Retired teacher</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
             <p className="text-white text-xl font-medium mb-4">Don't let this be your story.</p>

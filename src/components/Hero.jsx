@@ -362,8 +362,8 @@ const Hero = () => {
                   <ShieldPlus className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold tracking-wider">Instant saving</p>
-                  <p className="text-lg font-bold text-secondary">Save upto ₹100000*</p>
+                  <p className="text-xs text-gray-500 font-bold tracking-wider">Instant Saving</p>
+                  <p className="text-lg font-bold text-secondary">Save ₹100000*</p>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ const CancerAwareness = () => {
   return (
     <section className="section-padding bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Side: Awareness Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -23,7 +23,7 @@ const CancerAwareness = () => {
             </h2>
 
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              India is facing a significant surge in Cancer cases. Lack of awareness and high treatment costs often lead to delayed diagnosis and financial ruin for middle-class families.
+              India is facing a significant surge in cancer cases. Lack of awareness and high treatment costs often lead to delayed diagnosis and financial ruin for middle-class families.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8">
@@ -33,7 +33,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">1 in 9 Indians</h4>
-                  <p className="text-gray-500">Likely to develop Cancer in their lifetime.</p>
+                  <p className="text-gray-500">Likely to develop cancer in their lifetime.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -42,7 +42,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">14.6 lakh cases</h4>
-                  <p className="text-gray-500">Estimated new Cancer cases in India annually.</p>
+                  <p className="text-gray-500">Estimated new cancer cases in India annually.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -51,7 +51,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">₹5-15 lakhs</h4>
-                  <p className="text-gray-500">Average cost of complete Cancer treatment cycle.</p>
+                  <p className="text-gray-500">Average cost of complete cancer treatment cycle.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -72,21 +72,24 @@ const CancerAwareness = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="relative"
+            className="relative hidden lg:block"
           >
             <div className="relative rounded-[3rem] overflow-hidden group shadow-2xl">
-              <img
-                src="/rate2.png"
-                alt="Oncology Care"
-                className="w-full h-[450px] object-cover pr-3 md:object-fit transition-transform duration-700 group-hover:scale-105"
-              />
+              <picture>
+                <source media="(min-width: 1024px)" srcSet="/rate2.png" />
+                <img
+                  src="/rate3.png"
+                  alt="Oncology Care"
+                  className="w-full h-auto lg:h-[450px] object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+              </picture>
               {/* Whitish Blurry Overlay */}
               <div className="absolute inset-0 bg-white/40 backdrop-blur-xs transition-all duration-700 group-hover:bg-transparent group-hover:backdrop-blur-none pointer-events-none" />
 
-              <div className="absolute inset-0 top-32 to-transparent flex items-start p-4">
+              <div className="absolute inset-0 top-16 lg:top-32 flex items-start p-4">
                 <div className="text-white relative z-10">
-                  <p className="text-primary font-bold mb-4 tracking-widest">Advanced Radiology</p>
-                  <h4 className="text-2xl text-black font-bold">Bridging the gap in Cancer<br /> care accessibility</h4>
+                  <p className="text-primary font-bold mb-2 lg:mb-4 tracking-widest text-sm lg:text-base">Advanced Radiology</p>
+                  <h4 className="text-xl lg:text-2xl text-black font-bold leading-tight">Bridging the gap in Cancer<br /> care accessibility</h4>
                 </div>
               </div>
             </div>

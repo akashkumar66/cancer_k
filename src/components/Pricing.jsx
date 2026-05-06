@@ -46,7 +46,7 @@ const Pricing = () => {
                 { text: "Discounts on Medicines, Chemotherapy, Radiology & Surgery", bold: false },
                 { text: "Discounts on all medical bills upto 40% with no upper limit of the bill value.", bold: false },
                 { text: "Use unlimited number of times", bold: false },
-                { text: "Valid on Cancer & every other disease", bold: false },
+                { text: "Valid on cancer & every other disease", bold: false },
                 { text: "Valid on all pre-existing diseases", bold: false },
                 { text: "Applicable on entire body.", bold: false },
                 { text: "Works on OPD & IPD", bold: false },

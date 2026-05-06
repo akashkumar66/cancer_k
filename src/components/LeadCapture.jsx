@@ -21,7 +21,7 @@ const LeadCapture = () => {
           <div>
             <h2 className="text-4xl font-bold text-secondary mb-6">Reduce your Cancer treatment costs today</h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Don't let medical bills come in the way of your recovery. Join India's largest Cancer support network.
+              Don't let medical bills come in the way of your recovery. Join India's largest cancer support network.
             </p>
 
             <ul className="space-y-4">

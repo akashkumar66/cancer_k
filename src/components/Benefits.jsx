@@ -7,7 +7,7 @@ const Benefits = () => {
     {
       icon: <ClipboardCheck className="text-teal-500" size={40} />,
       title: "Valid on all pre-existing diseases",
-      desc: "Oxxy works on all pre-existing diseases like Diabetes, Cancer etc."
+      desc: "Oxxy works on all pre-existing diseases like diabetes, cancer etc."
     },
     {
       icon: <TrendingUp className="text-teal-500" size={40} />,
@@ -25,17 +25,17 @@ const Benefits = () => {
     {
       icon: <History className="text-teal-500" size={40} />,
       title: "Works on OPD & IPD",
-      desc: "Most medical protections work after 24 hours hospitalization. Oxxy caters from small Tests to expensive medical Surgeries."
+      desc: "Most medical protections work after 24 hours hospitalization. Oxxy caters from small tests to expensive medical surgeries."
     },
     {
       icon: <Infinity className="text-teal-500" size={40} />,
       title: "Unlimited usage",
-      desc: "Use unlimited time. Get discounts on any Tests, Treatments & Surgeries."
+      desc: "Use unlimited time. Get discounts on any tests, treatments & surgeries."
     },
     {
       icon: <Stethoscope className="text-teal-500" size={40} />,
       title: "Includes Eye, Dental & Derma",
-      desc: "Also get discounts on Eye Surgeries, Dental Procedures, Derma & Cosmetic Treatments."
+      desc: "Also get discounts on eye surgeries, dental procedures, derma & cosmetic treatments."
     }
   ];
 

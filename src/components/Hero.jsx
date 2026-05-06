@@ -68,7 +68,7 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-4 py-2  rounded-full mb-2 font-semibold">
+          <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-2 py-2  rounded-full mb-2 font-semibold">
             <Activity size={18} />
             <span>India's largest healthcare network</span>
           </div>
@@ -349,33 +349,33 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative"
         >
-          <div className="w-full h-[400px] relative mt-16 mb-16 rounded-3xl shadow-2xl">
+          <div className="w-full h-[300px] sm:h-[400px] relative mt-16 mb-16 rounded-3xl shadow-2xl">
             <img
               src="/heeero.jpeg"
               alt="Happy Indian Family"
               className="w-full h-full object-cover rounded-3xl"
             />
-            {/* Float Cards */}
-            <div className="absolute -top-8 -left-6 bg-white p-4 rounded-2xl shadow-premium animate-float">
+            {/* Float Cards - Hidden on very small screens to prevent overflow */}
+            <div className="absolute -top-6 -left-2 sm:-top-8 sm:-left-6 bg-white p-3 sm:p-4 rounded-2xl shadow-premium animate-float">
               <div className="flex items-center space-x-3">
                 <div className="bg-accent/10 p-2 rounded-lg">
                   <ShieldPlus className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold tracking-wider">Instant Savings</p>
-                  <p className="text-lg font-bold text-secondary">Reduce costs by ₹1,00,000*</p>
+                  <p className="text-[10px] text-gray-500 font-bold tracking-wider uppercase">Instant Savings</p>
+                  <p className="text-sm sm:text-lg font-bold text-secondary">Reduce costs by ₹1,00,000*</p>
                 </div>
               </div>
             </div>
 
-            <div className="absolute bottom-10 -right-6 bg-white p-4 rounded-2xl shadow-premium animate-float [animation-delay:2s]">
+            <div className="absolute bottom-6 -right-2 sm:bottom-10 sm:-right-6 bg-white p-3 sm:p-4 rounded-2xl shadow-premium animate-float [animation-delay:2s]">
               <div className="flex items-center space-x-3">
                 <div className="bg-primary/10 p-2 rounded-lg">
                   <Users className="text-primary" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold tracking-wider">Trusted by</p>
-                  <p className="text-lg font-bold text-secondary">2Cr+ families</p>
+                  <p className="text-[10px] text-gray-500 font-bold tracking-wider uppercase">Trusted by</p>
+                  <p className="text-sm sm:text-lg font-bold text-secondary">2Cr+ families</p>
                 </div>
               </div>
             </div>

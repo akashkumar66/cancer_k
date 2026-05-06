@@ -6,8 +6,8 @@
   scroll-behavior: smooth;
 }
 
-body {
-  @apply font-body antialiased text-gray-700 leading-relaxed;
+html, body {
+  @apply font-body antialiased text-gray-700 leading-relaxed overflow-x-hidden;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   word-spacing: 0.02em;
 }

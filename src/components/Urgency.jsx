@@ -29,31 +29,31 @@ const Urgency = () => {
         className="absolute top-0 left-0 w-full h-full bg-white/5 skew-x-12 pointer-events-none"
       />
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
-        <div className="flex items-center space-x-4 mb-8 md:mb-0">
-          <div className="bg-white p-3 rounded-2xl shadow-lg">
-            <Zap className="text-primary" size={32} />
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between relative z-10 space-y-8 lg:space-y-0">
+        <div className="flex items-center space-x-4">
+          <div className="bg-white p-2.5 sm:p-3 rounded-2xl shadow-lg shrink-0">
+            <Zap className="text-primary w-6 h-6 sm:w-8 sm:h-8" />
           </div>
-          <div>
-            <h3 className="text-2xl font-bold text-white leading-tight">Cancer support initiative</h3>
-            <p className="text-white/80">Get 10% OFF on infinity plans this month. Use code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
+          <div className="text-left">
+            <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">Cancer support initiative</h3>
+            <p className="text-sm sm:text-base text-white/80">Get 10% OFF on infinity plans. Use code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
           </div>
         </div>
 
-        <div className="flex items-center space-x-6">
+        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className="flex items-center space-x-3 text-white">
-            <Timer size={24} className="animate-pulse" />
-            <span className="font-semibold tracking-wider">Offer ends in:</span>
+            <Timer size={20} className="animate-pulse" />
+            <span className="font-bold tracking-wider text-sm sm:text-base whitespace-nowrap">Offer ends in:</span>
           </div>
 
-          <div className="flex space-x-2">
+          <div className="flex space-x-3">
             {[
               { val: h, label: "HRS" },
               { val: m, label: "MIN" },
               { val: s, label: "SEC" }
             ].map((unit, i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="bg-secondary text-white w-14 h-14 rounded-xl flex items-center justify-center text-2xl font-bold shadow-lg border border-white/10">
+                <div className="bg-secondary text-white w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center text-xl sm:text-2xl font-black shadow-lg border border-white/10">
                   {unit.val.toString().padStart(2, '0')}
                 </div>
                 <span className="text-[10px] font-bold text-white/60 mt-1 uppercase">{unit.label}</span>

@@ -17,7 +17,7 @@ const About = () => {
               <Heart size={16} />
               <span>About Oxxy</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
               Mission to simplify <span className="text-primary">cancer care</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">

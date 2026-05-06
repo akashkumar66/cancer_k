@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AlertCircle, TrendingUp, Wallet, Stethoscope, Clock, TrendingDown } from 'lucide-react';
+import { AlertCircle, TrendingUp, Wallet, Stethoscope, Clock, TrendingDown, Quote } from 'lucide-react';
 
 const Problem = () => {
   const painPoints = [
@@ -47,9 +47,15 @@ const Problem = () => {
       <div className="mt-20 p-10 bg-secondary rounded-[2.5rem] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-3xl font-bold text-white mb-6">"My wife's <span className='italic'>chemotherapy</span> was costing ₹80,000 per cycle. Without <span className='italic'>Oxxy</span>, we would have had to sell our ancestral home."</h3>
-            <p className="text-white/70 text-lg">Arvind mehta, Retired teacher</p>
+          <div className="relative">
+            <Quote className="absolute -top-8 -left-6 text-white/10 w-16 h-16" />
+            <h3 className="text-2xl md:text-3xl font-medium text-white mb-6 leading-[1.3] tracking-tight">
+              "My wife's <span className="italic font-bold text-primary">chemotherapy</span> was costing ₹80,000 per cycle. Without <span className="italic font-bold text-primary">Oxxy</span>, we would have had to sell our ancestral home."
+            </h3>
+            <div className="flex items-center space-x-4">
+              <div className="w-10 h-1 bg-primary rounded-full" />
+              <p className="text-white/80 text-lg font-semibold tracking-wide">Arvind Mehta, Retired Teacher</p>
+            </div>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
             <p className="text-white text-xl font-medium mb-4">Don't let this be your story.</p>

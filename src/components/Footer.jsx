@@ -3,17 +3,15 @@ import { ShieldCheck, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-100 pt-20 pb-10">
+    <footer className="bg-white border-t border-gray-100 pt-12 md:pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-16">
           {/* Brand Column */}
-          <div className="space-y-6">
-            <div className="p-2 rounded-lg">
-              <div className='md:mb-8 h-6 w-32'>
-                <img src='/oxxy_logo.png' />
-              </div>
+          <div className="col-span-2 lg:col-span-1 space-y-6">
+            <div className="mb-4 md:mb-8">
+              <img src='/oxxy_logo.png' className="h-12 w-auto md:h-10" />
             </div>
-            <p className=" text-gray-500 leading-relaxed">
+            <p className="text-gray-500 leading-relaxed max-w-sm">
               India's leading healthcare savings platform helping families reduce their medical expenditure through pre negotiated network rates.
             </p>
             <div className="flex space-x-4">
@@ -29,12 +27,12 @@ const Footer = () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-all cursor-pointer"
+                    className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center text-secondary hover:bg-primary hover:text-white transition-all cursor-pointer"
                   >
                     <Icon size={20} />
                   </a>
                 ) : (
-                  <div key={i} className="w-10 h-10 md:mt-4 bg-gray-50 rounded-full flex items-center justify-center text-secondary">
+                  <div key={i} className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center text-secondary">
                     <Icon size={20} />
                   </div>
                 )
@@ -43,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="col-span-1 lg:col-span-1">
             <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Quick Links</h4>
             <ul className="space-y-4">
               {["How it works", "About Oxxy", "Network hospitals", "Medical camps", "Careers", "Media coverage"].map((link) => (
@@ -55,7 +53,7 @@ const Footer = () => {
           </div>
 
           {/* Support */}
-          <div>
+          <div className="col-span-1 lg:col-span-1">
             <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Support</h4>
             <ul className="space-y-4">
               {["Patient stories", "Terms of service", "Privacy policy", "Refund policy", "Contact us"].map((link) => (
@@ -67,7 +65,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Contact Us</h4>
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">

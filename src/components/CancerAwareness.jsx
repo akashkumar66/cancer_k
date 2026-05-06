@@ -16,10 +16,10 @@ const CancerAwareness = () => {
           >
             <div className="inline-flex items-center space-x-2 bg-red-100 text-red-600 px-4 py-2 rounded-full mb-6 font-bold text-sm">
               <AlertTriangle size={16} />
-              <span>Cancer awareness</span>
+              <span>Cancer Awareness</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
-              The rising challenge of <span className="text-red-500">Cancer in India</span>
+              The rising challenge of <span className="text-red-500">cancer in India</span>
             </h2>
 
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
@@ -89,7 +89,7 @@ const CancerAwareness = () => {
               <div className="absolute inset-0 top-16 lg:top-32 flex items-start p-4">
                 <div className="text-white relative z-10">
                   <p className="text-primary font-bold mb-2 lg:mb-4 tracking-widest text-sm lg:text-base">Advanced Radiology</p>
-                  <h4 className="text-xl lg:text-2xl text-black font-bold leading-tight">Bridging the gap in Cancer<br /> care accessibility</h4>
+                  <h4 className="text-xl lg:text-2xl text-black font-bold leading-tight">Bridging the gap in cancer<br /> care accessibility</h4>
                 </div>
               </div>
             </div>

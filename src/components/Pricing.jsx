@@ -40,10 +40,10 @@ const Pricing = () => {
 
             <div className="space-y-3 text-left max-w-lg mx-auto mb-8">
               {[
-                { text: "Works on Cancer patients at any stage*", bold: true },
+                { text: "Works on cancer patients at any stage*", bold: true },
                 { text: "No age limit*", bold: true },
                 { text: "No medical screening needed*", bold: true },
-                { text: "Discounts on Medicines, Chemotherapy, Radiology & Surgery", bold: false },
+                { text: "Discounts on medicines, chemotherapy, radiology & surgery", bold: false },
                 { text: "Discounts on all medical bills upto 40% with no upper limit of the bill value.", bold: false },
                 { text: "Use unlimited number of times", bold: false },
                 { text: "Valid on cancer & every other disease", bold: false },

@@ -18,7 +18,7 @@ const About = () => {
               <span>About Oxxy</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
-              Mission to simplify <span className="text-primary">Cancer care</span>
+              Mission to simplify <span className="text-primary">cancer care</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
               Overall, Oxxy aims to simplify the cancer treatment journey by providing complete support from diagnosis to post treatment care while significantly reducing medical expenses, allowing patients and their families to focus on recovery and well being.

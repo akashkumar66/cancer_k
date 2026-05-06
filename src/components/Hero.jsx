@@ -94,7 +94,7 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                   <Handshake size={24} />
                 </div>
-                <span className="font-semibold">Complete Cancer support</span>
+                <span className="font-semibold">Complete cancer support</span>
               </div>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
@@ -191,7 +191,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Layers size={18} />
                   </div>
-                  <span className="font-medium leading-tight">All Cancer covered</span>
+                  <span className="font-medium leading-tight">All cancer covered</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -287,7 +287,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Stethoscope size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Works on Chemo, Radiation and surgeries</span>
+                  <span className="font-medium leading-tight">Works on chemo, radiation and surgeries</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -362,8 +362,8 @@ const Hero = () => {
                   <ShieldPlus className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold tracking-wider">Instant Saving</p>
-                  <p className="text-lg font-bold text-secondary">Save ₹100000*</p>
+                  <p className="text-xs text-gray-500 font-bold tracking-wider">Instant Savings</p>
+                  <p className="text-lg font-bold text-secondary">Reduce costs by ₹1,00,000*</p>
                 </div>
               </div>
             </div>

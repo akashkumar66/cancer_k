@@ -48,7 +48,7 @@ const Problem = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-6">"My wife's <span className='italic'>Chemotherapy</span> was costing ₹80,000 per cycle. Without <span className='italic'>Oxxy</span>, we would have had to sell our ancestral home."</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">"My wife's <span className='italic'>chemotherapy</span> was costing ₹80,000 per cycle. Without <span className='italic'>Oxxy</span>, we would have had to sell our ancestral home."</h3>
             <p className="text-white/70 text-lg">Arvind mehta, Retired teacher</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">

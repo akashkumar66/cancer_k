@@ -5,21 +5,21 @@ import { Star, Quote } from 'lucide-react';
 const SocialProof = () => {
   const testimonials = [
     {
-      name: "Amaya lal 38",
+      name: "Amaya Lal 38",
       role: "New Delhi, Delhi",
-      content: "I used to smoke in the company of my friends. I never thought that it will lead to Cancer. But when i was diagnosed with Cancer, i was shocked. I didn't know what to do. But then i found out about Oxxy and thanks for taking care of me completly.",
+      content: "I used to smoke in the company of my friends. I never thought that it will lead to cancer. But when i was diagnosed with cancer, i was shocked. I didn't know what to do. But then i found out about Oxxy and thanks for taking care of me completly.",
       image: "women1.png"
     },
     {
-      name: "Arif mohammad 57",
+      name: "Arif Mohammad 57",
       role: "Hyderabad , Telangana",
-      content: "I am an insurance broker. Couldn't imagine that someone can offer a Cancer health plan after Cancer predected. It will be a big support for all my clients who are run insured / under insured to save money.",
+      content: "I am an insurance broker. Couldn't imagine that someone can offer a cancer health plan after cancer predected. It will be a big support for all my clients who are run insured / under insured to save money.",
       image: "men.png"
     },
     {
-      name: "Zubaida begum 52",
+      name: "Zubaida Begum 52",
       role: "Noida, Uttar Pradesh",
-      content: "My mom had Cancer stage 4. Nobody was willing to support. Oxxy was big help saved alot of money at the time when needed. Works on medicines too. Thank god my mom is out of danger noew. Oxxy played a big role to save my mom.",
+      content: "My mom had cancer stage 4. Nobody was willing to support. Oxxy was big help saved alot of money at the time when needed. Works on medicines too. Thank god my mom is out of danger now. Oxxy played a big role to save my mom.",
       image: "women2.png"
     }
   ];

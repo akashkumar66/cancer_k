@@ -14,14 +14,14 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'How it Works', href: '#how-it-works' },
+    { name: 'How it works', href: '#how-it-works' },
     // { name: 'Benefits', href: '#benefits' },
     // { name: 'Plans', href: '#plans' },
     // { name: 'Testimonials', href: '#testimonials' },
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-xl py-3' : 'bg-white/90 backdrop-blur-md shadow-md py-5'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <img src="/oxxy_logo.png" alt="Oxxy Logo" className="h-10 w-auto" />
@@ -42,7 +42,7 @@ const Navbar = () => {
             href="#contact"
             className="btn-gradient px-6 py-2.5 rounded-full shadow-premium"
           >
-            Get Plan
+            Get plan
           </a>
         </div>
 

@@ -15,13 +15,13 @@ const About = () => {
           >
             <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-4 py-2 rounded-full mb-6 font-bold text-sm">
               <Heart size={16} />
-              <span>ABOUT OXXY</span>
+              <span>About Oxxy</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
-              Mission to Simplify <span className="text-primary">Cancer Care</span>
+              Mission to simplify <span className="text-primary">Cancer care</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
-              Overall, Oxxy aims to simplify the cancer treatment journey by providing complete support—from diagnosis to post-treatment care—while significantly reducing medical expenses, allowing patients and their families to focus on recovery and well-being.
+              Overall, Oxxy aims to simplify the cancer treatment journey by providing complete support from diagnosis to post treatment care while significantly reducing medical expenses, allowing patients and their families to focus on recovery and well being.
             </p>
 
             <div className="space-y-4">
@@ -29,13 +29,13 @@ const About = () => {
                 <div className="bg-white p-3 rounded-xl shadow-sm text-primary">
                   <Shield size={24} />
                 </div>
-                <p className="font-bold text-secondary">Complete Financial Protection</p>
+                <p className="font-bold text-secondary">Complete financial protection</p>
               </div>
               <div className="flex items-center gap-4 p-4 bg-background-soft rounded-2xl border border-gray-100">
                 <div className="bg-white p-3 rounded-xl shadow-sm text-primary">
                   <Sparkles size={24} />
                 </div>
-                <p className="font-bold text-secondary">End-to-End Treatment Support</p>
+                <p className="font-bold text-secondary">End-to-end treatment support</p>
               </div>
             </div>
           </motion.div>

@@ -25,8 +25,8 @@ const OxxySize = () => {
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-4">Oxxy Size</h2>
-          <p className="text-xl text-gray-500">India's Largest Healthcare Network</p>
+          <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-4">Oxxy size</h2>
+          <p className="text-xl text-gray-500">India's largest healthcare network</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -45,7 +45,7 @@ const OxxySize = () => {
               <h3 className="text-2xl md:text-3xl font-black text-secondary mb-2 tracking-tighter">
                 <span className="text-primary">{stat.value}</span>
               </h3>
-              <p className="text-lg font-bold text-secondary uppercase tracking-wider">
+              <p className="text-lg font-bold text-secondary tracking-wider">
                 {stat.label}
               </p>
             </motion.div>

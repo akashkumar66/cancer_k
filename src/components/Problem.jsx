@@ -7,16 +7,16 @@ const Problem = () => {
     {
       icon: <Stethoscope className="w-12 h-12 text-red-500" />,
       title: "Expensive Radiology",
-      description: "Cancer treatments like Chemotherapy and Radiology can cost lakhs per session, often exceeding insurance limits."
+      description: "Cancer treatments like chemotherapy and radiology can cost lakhs per session, often exceeding insurance limits."
     },
     {
       icon: <Clock className="w-12 h-12 text-red-500" />,
-      title: "Wait & Exclusion",
+      title: "Wait & exclusion",
       description: "Most policies have a 2-4 year waiting period for cancer, leaving patients vulnerable when they need help now."
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-red-500" />,
-      title: "Savings Wipeout",
+      title: "Savings wipeout",
       description: "A full cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
     }
   ];
@@ -24,7 +24,7 @@ const Problem = () => {
   return (
     <section className="section-padding bg-white">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl premium-heading text-secondary mb-6">Why Modern Healthcare is Failing You</h2>
+        <h2 className="text-4xl premium-heading text-secondary mb-6">Why modern healthcare is failing you?</h2>
         <p className="text-xl text-gray-600">The traditional healthcare system is designed to benefit hospitals, not patients. Here's the reality most families face:</p>
       </div>
 
@@ -48,14 +48,14 @@ const Problem = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-6 italic">"My wife's Chemotherapy was costing ₹80,000 per cycle. Without Oxxy, we would have had to sell our ancestral home."</h3>
-            <p className="text-white/70 text-lg">— Arvind Mehta, Retired Teacher</p>
+            <h3 className="text-3xl font-bold text-white mb-6">"My wife's <span className='italic'>Chemotherapy</span> was costing ₹80,000 per cycle. Without <span className='italic'>Oxxy</span>, we would have had to sell our ancestral home."</h3>
+            <p className="text-white/70 text-lg">Arvind mehta, retired teacher</p>
           </div>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
             <p className="text-white text-xl font-medium mb-4">Don't let this be your story.</p>
             <p className="text-white/80 mb-6">Oxxy provides guaranteed savings without the hidden clauses of traditional insurance.</p>
             <button className="bg-white text-secondary font-bold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all">
-              Save My Savings
+              Save my savings
             </button>
           </div>
         </div>

@@ -27,9 +27,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-secondary mb-6 uppercase tracking-wider">Quick Links</h4>
+            <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Quick Links</h4>
             <ul className="space-y-4">
-              {["How it Works", "About Oxxy", "Network Hospitals", "Medical Camps", "Careers", "Media Coverage"].map((link) => (
+              {["How it works", "About Oxxy", "Network hospitals", "Medical camps", "Careers", "Media coverage"].map((link) => (
                 <li key={link}>
                   <span className="text-gray-500">{link}</span>
                 </li>
@@ -39,9 +39,9 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h4 className="text-lg font-bold text-secondary mb-6 uppercase tracking-wider">Support</h4>
+            <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Support</h4>
             <ul className="space-y-4">
-              {["Patient Stories", "Terms of Service", "Privacy Policy", "Refund Policy", "Contact Us"].map((link) => (
+              {["Patient stories", "Terms of service", "Privacy policy", "Refund policy", "Contact us"].map((link) => (
                 <li key={link}>
                   <span className="text-gray-500">{link}</span>
                 </li>
@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-bold text-secondary mb-6 uppercase tracking-wider">Contact Us</h4>
+            <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Contact Us</h4>
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-2 rounded-lg mt-1">
@@ -88,8 +88,8 @@ const Footer = () => {
         <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center">
             <div>
-              <p className="text-gray-400 text-sm">© 2025 Oxxy Healthcare. All Rights Reserved.</p>
-              <p className="text-xs text-gray-400 mt-1 italic">Oxxy is not an INSURANCE. Oxxy sells Discounted Health Plans.</p>
+              <p className="text-gray-400 text-sm">© 2025 Oxxy healthcare. All rights reserved.</p>
+              <p className="text-xs text-gray-400 mt-1 italic">Oxxy is not an insurance. Oxxy sells discounted health plans.</p>
             </div>
 
             {/* Credit Section */}

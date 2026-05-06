@@ -9,11 +9,19 @@
 body {
   @apply font-body antialiased text-gray-700 leading-relaxed;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  word-spacing: 0.02em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply font-heading tracking-[-0.03em] text-secondary font-bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading tracking-normal text-secondary font-bold;
   text-wrap: balance;
+  word-spacing: 0.02em;
+
 }
 
 .text-balance {
@@ -21,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .premium-heading {
-  @apply tracking-[-0.04em] font-extrabold leading-[1.1];
+  @apply tracking-tight font-extrabold leading-[1.1];
+  word-spacing: 0.06em;
 }
 
 .glass-card {

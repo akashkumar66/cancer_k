@@ -16,10 +16,10 @@ const CancerAwareness = () => {
           >
             <div className="inline-flex items-center space-x-2 bg-red-100 text-red-600 px-4 py-2 rounded-full mb-6 font-bold text-sm">
               <AlertTriangle size={16} />
-              <span>CANCER AWARENESS</span>
+              <span>Cancer awareness</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
-              The Rising Challenge of <span className="text-red-500">Cancer in India</span>
+              The rising challenge of <span className="text-red-500">Cancer in India</span>
             </h2>
 
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
@@ -41,7 +41,7 @@ const CancerAwareness = () => {
                   <TrendingUp size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-secondary text-lg">14.6 Lakh Cases</h4>
+                  <h4 className="font-bold text-secondary text-lg">14.6 lakh cases</h4>
                   <p className="text-gray-500">Estimated new cancer cases in India annually.</p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const CancerAwareness = () => {
                   <IndianRupee size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-secondary text-lg">₹5-15 Lakhs</h4>
+                  <h4 className="font-bold text-secondary text-lg">₹5-15 lakhs</h4>
                   <p className="text-gray-500">Average cost of complete cancer treatment cycle.</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const CancerAwareness = () => {
                   <Heart size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-secondary text-lg">50-60% Savings</h4>
+                  <h4 className="font-bold text-secondary text-lg">50-60% savings</h4>
                   <p className="text-gray-500">Can be achieved through timely intervention and Oxxy.</p>
                 </div>
               </div>
@@ -74,16 +74,16 @@ const CancerAwareness = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative rounded-[3rem] overflow-hidden shadow-premium group">
+            <div className="relative  rounded-[3rem] overflow-hidden  group">
               <img
                 src="/rate2.png"
                 alt="Oncology Care"
-                className="w-full h-[450px] object-cover   md:object-fit transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-[450px] object-cover pr-3   md:object-fit transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0  top-32  to-transparent flex items-start p-4">
                 <div className="text-white">
-                  <p className="text-primary font-bold mb-4 uppercase tracking-widest">Advanced Radiology</p>
-                  <h4 className="text-2xl text-black font-bold">Bridging the Gap in Cancer<br /> Care Accessibility</h4>
+                  <p className="text-primary font-bold mb-4 tracking-widest">Advanced Radiology</p>
+                  <h4 className="text-2xl text-black font-bold">Bridging the gap in cancer<br /> care accessibility</h4>
                 </div>
               </div>
             </div>

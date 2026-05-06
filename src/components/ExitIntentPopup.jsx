@@ -5,15 +5,15 @@ import { X, Gift, Sparkles, ArrowRight } from 'lucide-react';
 const ExitIntentPopup = ({ onClose }) => {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-6">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         onClick={onClose}
         className="absolute inset-0 bg-secondary/80 backdrop-blur-sm"
       />
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -27,7 +27,7 @@ const ExitIntentPopup = ({ onClose }) => {
         </div>
 
         <div className="md:col-span-3 p-12 relative">
-          <button 
+          <button
             onClick={onClose}
             className="absolute top-6 right-6 text-gray-400 hover:text-secondary transition-colors"
           >
@@ -36,7 +36,7 @@ const ExitIntentPopup = ({ onClose }) => {
 
           <div className="inline-flex items-center space-x-2 bg-accent/10 text-accent-dark px-4 py-2 rounded-full mb-6 font-semibold">
             <Sparkles size={18} />
-            <span>Exclusive Offer</span>
+            <span>Exclusive offer</span>
           </div>
 
           <h2 className="text-3xl font-bold text-secondary mb-4">Get ₹500 OFF on your first plan</h2>
@@ -44,7 +44,7 @@ const ExitIntentPopup = ({ onClose }) => {
 
           <div className="bg-gray-50 border-2 border-dashed border-primary/30 p-6 rounded-2xl flex items-center justify-between mb-8">
             <div>
-              <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Your Promo Code</p>
+              <p className="text-xs text-gray-400 font-bold tracking-wider">Your promo code</p>
               <p className="text-2xl font-bold text-primary tracking-widest">WELCOME500</p>
             </div>
             <button className="bg-primary text-white p-3 rounded-xl hover:bg-primary-dark transition-all">
@@ -52,11 +52,11 @@ const ExitIntentPopup = ({ onClose }) => {
             </button>
           </div>
 
-          <button 
+          <button
             onClick={onClose}
             className="w-full btn-gradient py-4 rounded-2xl font-bold text-lg"
           >
-            Claim Discount Now
+            Claim discount now
           </button>
           <p className="text-center mt-4 text-sm text-gray-400">Valid for next 24 hours only.</p>
         </div>

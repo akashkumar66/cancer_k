@@ -6,15 +6,15 @@ const Hero = () => {
   const [activePopup, setActivePopup] = useState(null);
 
   const popups = {
-    complete: "Get comprehensive support for all cancer treatments, including medical, emotional, and financial guidance throughout your journey.",
+    complete: "Get comprehensive support for all Cancer treatments, including medical, emotional, and financial guidance throughout your journey.",
     stage: "Whether early detection or advanced stages, our  are designed to provide maximum benefits regardless of your current condition.",
-    covered: "From common to rare types, our coverage extends across all known cancer variations for complete peace of mind.",
+    covered: "From common to rare types, our coverage extends across all known Cancer variations for complete peace of mind.",
     moneyback: "We offer a money-back guarantee to ensure your complete satisfaction and peace of mind.",
     treatments: "Full coverage for chemotherapy, radiation therapy, complex surgeries, and post-operative care."
   };
 
   const [displayText, setDisplayText] = useState('');
-  const fullText = "Cancer Detection";
+  const fullText = `Cancer detection`;
 
   React.useEffect(() => {
     let i = 0;
@@ -22,7 +22,7 @@ const Hero = () => {
     let timeoutId;
 
     const type = () => {
-      const fullText = "Cancer Detection";
+      const fullText = `Cancer detection`;
       setDisplayText(isDeleting
         ? fullText.substring(0, i - 1)
         : fullText.substring(0, i + 1)
@@ -57,7 +57,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative pt-20 overflow-hidden">
+    <section className="relative pt-32 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl -z-10" />
@@ -70,12 +70,12 @@ const Hero = () => {
         >
           <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-4 py-2 rounded-full mb-6 font-semibold">
             <Activity size={18} />
-            <span>India's Largest Healthcare Network</span>
+            <span>India's largest healthcare network</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl premium-heading text-secondary mb-6">
-            Real Support <span className="text-primary text-4xl md:text-4xl block md:inline mb-2 md:mb-0">When It Matters Most — Even After <br /></span>
-            <span className="inline-block whitespace-nowrap">
+            Real support <span className="text-primary text-4xl md:text-4xl block md:inline mb-2 md:mb-0 leading-tight"> when it matters most even after <br /></span>
+            <span className="inline-block whitespace-nowrap leading-tight">
               {displayText}
               <span className="inline-block w-1 h-8 md:h-12 bg-primary ml-1 animate-pulse" style={{ verticalAlign: 'middle' }}></span>
             </span>
@@ -94,7 +94,7 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                   <Handshake size={24} />
                 </div>
-                <span className="font-semibold">Complete Cancer Support</span>
+                <span className="font-semibold">Complete cancer support</span>
               </div>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
@@ -143,7 +143,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <TrendingUp size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Effective At Any Stage</span>
+                  <span className="font-medium leading-tight">Effective at any stage</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -239,7 +239,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Banknote size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Money Back Guarantee</span>
+                  <span className="font-medium leading-tight">Money back guarantee</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -287,7 +287,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Stethoscope size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Works on Chemo, Radiation and Surgeries</span>
+                  <span className="font-medium leading-tight">Works on chemo, radiation and surgeries</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -362,8 +362,8 @@ const Hero = () => {
                   <ShieldPlus className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold uppercase tracking-wider">Instant Saving</p>
-                  <p className="text-lg font-bold text-secondary">Save Upto ₹100000*</p>
+                  <p className="text-xs text-gray-500 font-bold tracking-wider">Instant saving</p>
+                  <p className="text-lg font-bold text-secondary">Save upto ₹100000*</p>
                 </div>
               </div>
             </div>
@@ -374,8 +374,8 @@ const Hero = () => {
                   <Users className="text-primary" size={24} />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 font-bold uppercase tracking-wider">Trusted By</p>
-                  <p className="text-lg font-bold text-secondary">2Cr+ Families</p>
+                  <p className="text-xs text-gray-500 font-bold tracking-wider">Trusted by</p>
+                  <p className="text-lg font-bold text-secondary">2Cr+ families</p>
                 </div>
               </div>
             </div>

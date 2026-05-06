@@ -35,15 +35,15 @@ const Urgency = () => {
             <Zap className="text-primary" size={32} />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-white leading-tight">Cancer Support Initiative</h3>
-            <p className="text-white/80">Get 10% OFF on Infinity Plans this month. Use code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
+            <h3 className="text-2xl font-bold text-white leading-tight">Cancer support initiative</h3>
+            <p className="text-white/80">Get 10% OFF on infinity plans this month. Use code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
           </div>
         </div>
 
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-3 text-white">
             <Timer size={24} className="animate-pulse" />
-            <span className="font-semibold uppercase tracking-wider">Offer Ends In:</span>
+            <span className="font-semibold tracking-wider">Offer ends in:</span>
           </div>
 
           <div className="flex space-x-2">
@@ -61,11 +61,11 @@ const Urgency = () => {
             ))}
           </div>
 
-          <button 
+          <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="hidden lg:block bg-white text-primary font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
-            Claim Offer Now
+            Claim offer now
           </button>
         </div>
       </div>

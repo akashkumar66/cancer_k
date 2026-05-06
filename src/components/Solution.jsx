@@ -4,10 +4,10 @@ import { Zap, Truck, Pill, Infinity, Sparkles, TrendingDown, Hospital } from 'lu
 
 const Solution = () => {
   const highlights = [
-    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology Savings", desc: "Up to 40% off on Chemo & Radiology" },
+    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology savings", desc: "Up to 40% off on chemo & radiology" },
     // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
-    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-Medicines", desc: "Free home delivery of specialized meds" },
-    { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No Treatment Cap", desc: "Unlimited usage for long-term care" }
+    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-medicines", desc: "Free home delivery of specialized meds" },
+    { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No treatment cap", desc: "Unlimited usage for long-term care" }
   ];
 
   return (
@@ -16,13 +16,13 @@ const Solution = () => {
         <div>
           <div className="inline-flex items-center space-x-2 bg-accent/10 text-accent-dark px-4 py-2 rounded-full mb-6 font-semibold">
             <Sparkles size={18} />
-            <span>A Smarter Alternative to Insurance</span>
+            <span>A smarter alternative to insurance</span>
           </div>
           <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-8">
-            Oxxy: The <span className="text-primary">Cancer Support Network</span> You Can Rely On
+            Oxxy: The <span className="text-primary">Cancer support network</span> you can rely on
           </h2>
           <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-            We've built India's most robust oncology network. From PET Scans and Biopsies to complex Surgeries and Immunotherapy, we ensure you get the best care at pre-negotiated, affordable rates.
+            We've built India's most robust oncology network. From PET scans and biopsies to complex surgeries and immunotherapy, we ensure you get the best care at pre-negotiated, affordable rates.
           </p>
 
           <div className="grid grid-cols-2 gap-6">
@@ -47,7 +47,7 @@ const Solution = () => {
             >
               <div className="space-y-6">
                 <div className="flex justify-between items-center pb-6 border-b border-gray-100">
-                  <h3 className="text-2xl font-bold text-secondary">Savings Upto* 40%</h3>
+                  <h3 className="text-2xl font-bold text-secondary">Savings upto* 40%</h3>
                   <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-bold">PREMIUM PLAN</span>
                 </div>
 
@@ -69,7 +69,7 @@ const Solution = () => {
                 ))}
 
                 <div className="pt-6 border-t border-gray-100 flex justify-between items-center">
-                  <p className="text-xl font-bold text-secondary">Total Onco-Savings</p>
+                  <p className="text-xl font-bold text-secondary">Total onco-savings</p>
                   <p className="text-3xl font-bold text-primary">₹2,05,000</p>
                 </div>
               </div>

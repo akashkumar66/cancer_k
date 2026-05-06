@@ -6,17 +6,17 @@ const Benefits = () => {
   const leftBenefits = [
     {
       icon: <ClipboardCheck className="text-teal-500" size={40} />,
-      title: "Valid on all Pre-Existing Diseases",
-      desc: "Oxxy works on all pre-existing diseases like Diabetes, Cancer etc."
+      title: "Valid on all pre-existing diseases",
+      desc: "Oxxy works on all pre-existing diseases like diabetes, cancer etc."
     },
     {
       icon: <TrendingUp className="text-teal-500" size={40} />,
-      title: "No Age Limit",
-      desc: "Oxxy Health services can be availed by any age group from 0 to 120 years."
+      title: "No age limit",
+      desc: "Oxxy health services can be availed by any age group from 0 to 120 years."
     },
     {
       icon: <FileText className="text-teal-500" size={40} />,
-      title: "No Limit on Medical Expenses",
+      title: "No limit on medical expenses",
       desc: "Oxxy works seamlessly on all your medical expenses, from bill of Rs. 5000 to Rs. 5 crores."
     }
   ];
@@ -25,16 +25,16 @@ const Benefits = () => {
     {
       icon: <History className="text-teal-500" size={40} />,
       title: "Works on OPD & IPD",
-      desc: "Most Medical Protections work after 24 Hours Hospitalization. Oxxy caters from Small Tests to Expensive Medical Surgeries."
+      desc: "Most medical protections work after 24 hours hospitalization. Oxxy caters from small tests to expensive medical surgeries."
     },
     {
       icon: <Infinity className="text-teal-500" size={40} />,
-      title: "Unlimited Usage",
-      desc: "Use unlimited time. Get discounts on any Tests, Treatments & Surgeries."
+      title: "Unlimited usage",
+      desc: "Use unlimited time. Get discounts on any tests, treatments & surgeries."
     },
     {
       icon: <Stethoscope className="text-teal-500" size={40} />,
-      title: "Includes Eye, Dental & Derma",
+      title: "Includes eye, dental & derma",
       desc: "Also get discounts on eye surgeries, dental procedures, derma & cosmetic treatments."
     }
   ];
@@ -43,9 +43,9 @@ const Benefits = () => {
     <section id="benefits" className="py-20 bg-[#F4F7F6]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-[#3CB3AD] font-semibold mb-2 uppercase tracking-widest text-sm">The Amazing Benefits</p>
+          <p className="text-[#3CB3AD] font-semibold mb-2 tracking-widest text-sm">The amazing benefits</p>
           <h2 className="text-4xl md:text-5xl premium-heading text-[#1A3C34]">
-            Oxxy Offers More <span className="text-gray-500 font-normal">Than Any Health Insurance</span>
+            Oxxy offers more <span className="text-gray-500 font-normal">than any health insurance</span>
           </h2>
         </div>
 

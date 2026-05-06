@@ -5,19 +5,19 @@ import { Star, Quote } from 'lucide-react';
 const SocialProof = () => {
   const testimonials = [
     {
-      name: "Amaya Lal 38",
+      name: "Amaya lal 38",
       role: "New Delhi, Delhi",
-      content: "I used to smoke in the company of my friends. I never thought that it will lead to cancer. But when I was diagnosed with cancer, I was shocked. I didn't know what to do. But then I found out about Oxxy and thank god oxxy was there to take care of me completly.",
+      content: "I used to smoke in the company of my friends. I never thought that it will lead to cancer. But when i was diagnosed with cancer, i was shocked. I didn't know what to do. But then i found out about Oxxy and thanks for taking care of me completly.",
       image: "women1.png"
     },
     {
-      name: "Arif Mohammad 57",
+      name: "Arif mohammad 57",
       role: "Hyderabad , Telangana",
       content: "I am an insurance broker. Couldn't imagine that someone can offer a cancer health plan after cancer predected. It will be a big support for all my clients who are run insured / under insured to save money.",
       image: "men.png"
     },
     {
-      name: "Zubaida Begum 52",
+      name: "Zubaida begum 52",
       role: "Noida, Uttar Pradesh",
       content: "My mom had cancer stage 4. Nobody was willing to support. Oxxy was big help saved alot of money at the time when needed. Works on medicines too. Thank god my mom is out of danger noew. Oxxy played a big role to save my mom.",
       image: "women2.png"
@@ -26,8 +26,8 @@ const SocialProof = () => {
 
   const mediaCoverage = [
     { img: "/1_toi1.png", title: "The Times of India", desc: "Oxxy launches affordable health plan for entire family" },
-    { img: "/2_core.png", title: "Core Sector Communique", desc: "OXXY launches its plan to give nightmare to Health Insurance Companies" },
-    { img: "/7_tele.png", title: "Telecompaper", desc: "OnePlus, Oxxy partner on health project in India" },
+    { img: "/2_core.png", title: "Core Sector Communique", desc: "OXXY launches its plan to give nightmare to health insurance companies" },
+    { img: "/7_tele.png", title: "Telecompaper", desc: "Oneplus, Oxxy partner on health project in India" },
     { img: "/9_et.png", title: "Economic Times", desc: "Oxxy to launch chain of hospitals across India" },
     { img: "/14_firstpost.png", title: "Firstpost", desc: "Uber-Oxxy tie up: Free cab rides to all hospitals" },
     { img: "/25_live.png", title: "Mint", desc: "Uber, Oxxy tie up to provide cab rides to Delhi hospitals" },
@@ -45,7 +45,7 @@ const SocialProof = () => {
 
       <div className="relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl font-bold text-white mb-6">Real Stories from Real Families</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Real stories from real families</h2>
           <p className="text-xl text-white/70">Join millions of Indians who are already saving on their healthcare costs with Oxxy.</p>
         </div>
 
@@ -76,7 +76,7 @@ const SocialProof = () => {
         </div>
 
         <div className="mt-32 pt-16 border-t border-white/10">
-          <h2 className="text-center text-white text-3xl font-bold mb-16 uppercase tracking-widest">Media Coverage</h2>
+          <h2 className="text-center text-white text-3xl font-bold mb-16">Media Coverage</h2>
 
           <div className="relative overflow-hidden">
             {/* Gradient Overlays for smooth fade effect */}
@@ -111,7 +111,7 @@ const SocialProof = () => {
                     className="bg-[#009688] text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center space-x-3"
                   >
                     <span className="w-6 h-6 bg-white/20 text-white rounded-full flex items-center justify-center text-xs backdrop-blur-sm">+</span>
-                    <span>Read Article</span>
+                    <span>Read article</span>
                   </div>
                 </div>
               ))}

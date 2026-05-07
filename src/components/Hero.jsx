@@ -113,8 +113,8 @@ const Hero = () => {
                     <X size={18} />
                   </button>
                   <div className="flex flex-col items-center text-center mt-2">
-                    <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                      <Handshake size={24} />
+                    <div className="w-14 h-14 bg-primary/5 rounded-full flex items-center justify-center mb-4 overflow-hidden border border-primary/10">
+                      <img src="/community-icon.png" alt="Community Support" className="w-full h-full object-cover" />
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.complete}</p>
                     <button
@@ -162,8 +162,8 @@ const Hero = () => {
                       <X size={18} />
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
-                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <TrendingUp size={20} />
+                      <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-3 overflow-hidden border border-primary/10">
+                        <img src="/stage.jpg" alt="Stage Support" className="w-full h-full object-cover" />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.stage}</p>
                       <button
@@ -210,8 +210,8 @@ const Hero = () => {
                       <X size={18} />
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
-                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Layers size={20} />
+                      <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-3 overflow-hidden border border-primary/10">
+                        <img src="/allcancer3.jpg" alt="All Cancer Covered" className="w-full h-full object-cover" />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.covered}</p>
                       <button
@@ -258,8 +258,8 @@ const Hero = () => {
                       <X size={18} />
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
-                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Banknote size={20} />
+                      <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-3 overflow-hidden border border-primary/10">
+                        <img src="/moneyback2.png" alt="Money Back Guarantee" className="w-full h-full object-cover" />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.moneyback}</p>
                       <button
@@ -306,8 +306,8 @@ const Hero = () => {
                       <X size={18} />
                     </button>
                     <div className="flex flex-col items-center text-center mt-2">
-                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-3">
-                        <Stethoscope size={20} />
+                      <div className="w-12 h-12 bg-primary/5 rounded-full flex items-center justify-center mb-3 overflow-hidden border border-primary/10">
+                        <img src="/operation.jpg" alt="Treatments" className="w-full h-full object-cover" />
                       </div>
                       <p className="text-sm text-gray-600 leading-relaxed font-medium">{popups.treatments}</p>
                       <button

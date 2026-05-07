@@ -74,11 +74,11 @@ const CancerAwareness = () => {
             viewport={{ once: true }}
             className="relative block mt-12 lg:mt-0"
           >
-            <div className="relative rounded-[3rem] overflow-hidden group shadow-2xl">
+            <div className="relative rounded-[2rem] overflow-hidden group shadow-2xl">
               <picture>
-                <source media="(min-width: 1024px)" srcSet="/rate2.png" />
+                <source media="(min-width: 1024px)" srcSet="/cgraphL.png" />
                 <img
-                  src="/cgraph.png"
+                  src="/cgraphM.png"
                   alt="Cancer Statistics Graph"
                   className="w-full h-auto lg:h-[450px] object-contain transition-transform duration-700 group-hover:scale-105"
                 />

@@ -62,7 +62,7 @@ const Pricing = () => {
               ))}
             </div>
 
-            <a href="https://www.oxxy.in/cancer/healthplan.php?plan_name=cancer_care" target='_blank'>
+            <a href="#contact">
               <button
                 // onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="w-full btn-gradient py-4 rounded-full font-bold text-lg shadow-premium tracking-widest hover:scale-[1.02] transition-transform"

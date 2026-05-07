@@ -59,9 +59,11 @@ const Problem = () => {
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
             <p className="text-white text-xl font-medium mb-4">Don't let this be your story.</p>
             <p className="text-white/80 mb-6">Oxxy provides guaranteed savings without the hidden clauses of traditional insurance.</p>
-            <button className="bg-white text-secondary font-bold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all">
-              Save my savings
-            </button>
+            <a href='https://www.oxxy.in/cancer/' target='_blank'>
+              <button className="bg-white text-secondary font-bold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all">
+                Save Your Saving
+              </button>
+            </a>
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="#plans"
             className="btn-gradient px-6 py-2.5 rounded-full shadow-premium"
           >
             Get Plan

@@ -12,7 +12,7 @@ const AvailsAt = () => {
     <section className="py-12 bg-white overflow-hidden border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-6 mb-8 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-secondary">
-          Avails at <span className="text-primary">premium hospitals</span>
+          Avails at <span className="text-primary">Premium Hospitals</span>
         </h2>
       </div>
 

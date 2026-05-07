@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   const [displayText, setDisplayText] = useState('');
-  const fullText = `Cancer detection`;
+  const fullText = `Cancer Detection`;
 
   React.useEffect(() => {
     let i = 0;
@@ -22,7 +22,7 @@ const Hero = () => {
     let timeoutId;
 
     const type = () => {
-      const fullText = `Cancer detection`;
+      const fullText = `Cancer Detection`;
       setDisplayText(isDeleting
         ? fullText.substring(0, i - 1)
         : fullText.substring(0, i + 1)
@@ -62,7 +62,7 @@ const Hero = () => {
       <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-7xl mx-auto pt-4 px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto pt-4 px-6 grid md:grid-cols-2 gap-8 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl premium-heading text-secondary mb-6">
-            Real support <span className="text-primary text-4xl md:text-4xl block md:inline mb-2 md:mb-0 leading-tight"> when it matters most even after <br /></span>
+            Real Support <span className="text-primary text-4xl md:text-5xl block md:inline mb-2 md:mb-0 leading-tight"> When It Matters Most Even After <br /></span>
             <span className="inline-block whitespace-nowrap leading-tight">
               {displayText}
               <span className="inline-block w-1 h-8 md:h-12 bg-primary ml-1 animate-pulse" style={{ verticalAlign: 'middle' }}></span>
@@ -94,7 +94,7 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                   <Handshake size={24} />
                 </div>
-                <span className='md:pl-4 text-sm font-semibold'>Complete cancer support</span>
+                <span className='md:pl-4 text-sm font-semibold'>Complete Cancer Support</span>
               </div>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
@@ -143,7 +143,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <TrendingUp size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Effective at any stage</span>
+                  <span className="font-medium leading-tight">Effective at any Stage</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -191,7 +191,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Layers size={18} />
                   </div>
-                  <span className="font-medium leading-tight">All cancer covered</span>
+                  <span className="font-medium leading-tight">All Cancer Covered</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -239,7 +239,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Banknote size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Money back guarantee</span>
+                  <span className="font-medium leading-tight">Money Back Guarantee</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -287,7 +287,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                     <Stethoscope size={18} />
                   </div>
-                  <span className="font-medium leading-tight">Works on chemo, radiation and surgeries</span>
+                  <span className="font-medium leading-tight">Works on Chemo, Radiation & Surgeries</span>
                 </div>
                 <ArrowRight size={18} className="shrink-0 ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </button>
@@ -362,8 +362,8 @@ const Hero = () => {
                   <ShieldPlus className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-500 font-bold tracking-wider uppercase">Instant Savings</p>
-                  <p className="text-sm sm:text-lg font-bold text-secondary">Reduce costs by ₹1,00,000*</p>
+                  {/* <p className="text-[10px] text-gray-500 font-bold tracking-wider uppercase"></p> */}
+                  <p className="text-sm sm:text-lg font-bold text-secondary">Focus on recovery, not medical bills</p>
                 </div>
               </div>
             </div>

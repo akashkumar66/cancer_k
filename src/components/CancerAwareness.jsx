@@ -14,12 +14,12 @@ const CancerAwareness = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="inline-flex items-center space-x-2 bg-red-100 text-red-600 px-4 py-2 rounded-full mb-6 font-bold text-sm">
+            <div className="inline-flex uppercase items-center space-x-2 bg-red-100 text-red-600 px-4 py-2 rounded-full mb-6 font-bold text-sm">
               <AlertTriangle size={16} />
               <span>Cancer Awareness</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
-              The rising challenge of <span className="text-red-500">cancer in India</span>
+              The Rising Challenge of <span className="text-red-500">Cancer in India</span>
             </h2>
 
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">

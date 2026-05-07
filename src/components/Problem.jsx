@@ -50,7 +50,7 @@ const Problem = () => {
           <div className="relative">
             <Quote className="absolute -top-8 -left-6 text-white/10 w-16 h-16" />
             <h3 className="text-2xl md:text-3xl font-medium text-white mb-6 leading-[1.3] tracking-tight">
-              "My wife's <span className="italic font-bold text-primary">chemotherapy</span> was costing ₹80,000 per cycle. Without <span className="italic font-bold text-primary">Oxxy</span>, we would have had to sell our ancestral home."
+              "My wife's <span className="font-bold text-primary">Chemotherapy </span> was costing ₹80,000 per cycle. Without <span className="italic font-bold text-primary">Oxxy</span>, we would have had to sell our ancestral home."
             </h3>
             <div className="flex items-center space-x-4">
               <p className="text-white/80 text-lg font-semibold tracking-wide">Arvind Mehta, Retired Teacher</p>

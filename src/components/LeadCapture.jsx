@@ -19,7 +19,7 @@ const LeadCapture = () => {
 
         <div className="max-w-4xl mx-auto relative z-10 grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-secondary mb-6">Reduce your cancer treatment costs today</h2>
+            <h2 className="text-4xl font-bold text-secondary mb-6">Reduce Your Cancer Treatment Costs Today</h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Don't let medical bills come in the way of your recovery. Join India's largest cancer support network.
             </p>

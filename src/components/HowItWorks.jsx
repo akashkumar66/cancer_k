@@ -26,7 +26,7 @@ const HowItWorks = () => {
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-background-soft to-white" />
 
       <div className="text-center max-w-3xl mx-auto mb-20 relative z-10">
-        <h2 className="text-4xl font-bold text-secondary mb-6">Start saving in 3 simple steps</h2>
+        <h2 className="text-4xl font-bold text-secondary mb-6">Start Saving in 3 Simple Steps</h2>
         <p className="text-xl text-gray-600">Healthcare should be simple. With Oxxy, saving money on your medical bills is easier than ordering food.</p>
       </div>
 

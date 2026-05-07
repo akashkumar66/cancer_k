@@ -48,15 +48,15 @@ const itemVariants = {
 const Offers = () => {
   return (
     <section className="py-20 bg-[#F4F4F4]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto md:px-6 px-2">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-[#2A2A2A] mb-4"
+            className="text-3xl md:text-5xl font-bold text-[#2A2A2A] mb-4"
           >
-            Oxxy offers complete protection
+            Oxxy Offers Complete Cancer Protection
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: -10 }}
@@ -65,7 +65,7 @@ const Offers = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-500"
           >
-            The only health plan to work after detection of cancer
+            The only health plan that works after cancer detection
           </motion.p>
         </div>
 

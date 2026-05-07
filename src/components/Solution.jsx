@@ -14,12 +14,12 @@ const Solution = () => {
     <section className="section-padding bg-background-soft">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <div className="inline-flex items-center space-x-2 bg-accent/10 text-accent-dark px-4 py-2 rounded-full mb-6 font-semibold">
+          <div className="inline-flex items-center uppercase space-x-2 bg-accent/10 text-accent-dark px-4 py-2 rounded-full mb-6 font-semibold">
             <Sparkles size={18} />
-            <span>A smarter alternative to insurance</span>
+            <span>A Smarter Alternative To Insurance</span>
           </div>
           <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-8">
-            Oxxy: The <span className="text-primary">cancer support network</span> you can rely on
+            Oxxy: The <span className="text-primary">Cancer Support Network</span> You Can Rely on
           </h2>
           <p className="text-xl text-gray-600 mb-10 leading-relaxed">
             We've built India's most robust oncology network. From PET scans and biopsies to complex surgeries and immunotherapy, we ensure you get the best care at pre-negotiated, affordable rates.

@@ -14,7 +14,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'How it works', href: '#how-it-works' },
+    { name: 'How it Works', href: '#how-it-works' },
     // { name: 'Benefits', href: '#benefits' },
     // { name: 'Plans', href: '#plans' },
     // { name: 'Testimonials', href: '#testimonials' },
@@ -42,7 +42,7 @@ const Navbar = () => {
             href="#contact"
             className="btn-gradient px-6 py-2.5 rounded-full shadow-premium"
           >
-            Get plan
+            Get Plan
           </a>
         </div>
 

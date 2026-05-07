@@ -108,7 +108,7 @@ const Footer = () => {
             </div>
 
             {/* Credit Section */}
-            {/* <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-gray-200 bg-gray-50 shadow-sm hover:shadow-md hover:bg-gray-100 transition-all duration-300 ml-4">
+            <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 ml-4">
               <a
                 href="https://fabulousmedia.in"
                 target="_blank"
@@ -117,7 +117,7 @@ const Footer = () => {
                 aria-label="FabulousMedia"
               >
                 <img
-                  src="https://play.fabulousmedia.in/sitecredit/images/fabulousmedia.svg"
+                  src="/fabSvgIcon.png"
                   alt="FabulousMedia"
                   className="h-3 w-auto"
                   loading="lazy"
@@ -125,7 +125,7 @@ const Footer = () => {
                   height="12"
                 />
               </a>
-              <div className="h-3 w-px bg-gray-300 transition-colors duration-300"></div>
+              <div className="h-3 w-px bg-white/30 transition-colors duration-300"></div>
               <a
                 href="https://gocommercially.com"
                 target="_blank"
@@ -134,7 +134,7 @@ const Footer = () => {
                 aria-label="GoCommercially"
               >
                 <img
-                  src="https://play.fabulousmedia.in/sitecredit/images/gocommercially.svg"
+                  src="goSvgIcon.svg"
                   alt="GoCommercially"
                   className="h-3 w-auto"
                   loading="lazy"
@@ -142,7 +142,7 @@ const Footer = () => {
                   height="12"
                 />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

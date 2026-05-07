@@ -8,8 +8,8 @@ const Pricing = () => {
   return (
     <section id="plans" className="section-padding bg-white relative">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-4xl premium-heading text-secondary mb-4">Affordable plan for every family</h2>
-        <p className="text-xl text-gray-600">A best and affordable plan that fits for everybody.</p>
+        <h2 className="text-4xl premium-heading text-secondary mb-4">Affordable Plan for Every Family</h2>
+        <p className="text-xl text-gray-600">The best and affordable plan that fits for everybody.</p>
       </div>
 
       <div className="flex justify-center">

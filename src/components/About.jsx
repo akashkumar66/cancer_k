@@ -13,12 +13,12 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary-dark px-4 py-2 rounded-full mb-6 font-bold text-sm">
+            <div className="inline-flex items-center uppercase space-x-2 bg-primary/10 text-primary-dark px-4 py-2 rounded-full mb-6 font-bold text-sm">
               <Heart size={16} />
               <span>About Oxxy</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-8 leading-tight">
-              Mission to simplify <span className="text-primary">cancer care</span>
+              Mission to Simplify <span className="text-primary">Cancer Care</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed font-medium">
               Overall, Oxxy aims to simplify the cancer treatment journey by providing complete support from diagnosis to post treatment care while significantly reducing medical expenses, allowing patients and their families to focus on recovery and well being.

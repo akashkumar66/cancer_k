@@ -45,7 +45,7 @@ const SocialProof = () => {
 
       <div className="relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl font-bold text-white mb-6">Real stories from real families</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Real Stories From Real Families</h2>
           <p className="text-xl text-white/70">Join millions of Indians who are already saving on their healthcare costs with Oxxy.</p>
         </div>
 

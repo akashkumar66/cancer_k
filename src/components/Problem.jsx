@@ -53,7 +53,6 @@ const Problem = () => {
               "My wife's <span className="italic font-bold text-primary">chemotherapy</span> was costing ₹80,000 per cycle. Without <span className="italic font-bold text-primary">Oxxy</span>, we would have had to sell our ancestral home."
             </h3>
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-1 bg-primary rounded-full" />
               <p className="text-white/80 text-lg font-semibold tracking-wide">Arvind Mehta, Retired Teacher</p>
             </div>
           </div>

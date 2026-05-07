@@ -6,7 +6,7 @@ const Solution = () => {
   const highlights = [
     { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology savings", desc: "Save upto 40% off on chemo and radiology" },
     // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
-    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco-medicines", desc: "Free home delivery of specialized meds" },
+    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco medicines", desc: "Free home delivery of specialized meds" },
     { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No treatment cap", desc: "Unlimited usage for long-term care" }
   ];
 
@@ -59,7 +59,7 @@ const Solution = () => {
                   <div key={i} className="flex flex-col sm:flex-row justify-between items-center sm:items-start text-center sm:text-left space-y-2 sm:space-y-0 py-2">
                     <div>
                       <p className="text-lg font-bold text-secondary leading-tight">{row.label}</p>
-                      <p className="text-sm font-bold text-gray-400 line-through">Original: {row.amount}</p>
+                      <p className="text-sm font-bold text-gray-700 line-through">Original: {row.amount}</p>
                     </div>
                     <div className="sm:text-right">
                       <p className="text-xl font-black text-accent leading-none">-{row.discount}</p>

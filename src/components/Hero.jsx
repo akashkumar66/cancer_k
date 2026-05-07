@@ -94,7 +94,7 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                   <Handshake size={24} />
                 </div>
-                <span className="font-semibold">Complete cancer support</span>
+                <span className='md:pl-4 text-sm font-semibold'>Complete cancer support</span>
               </div>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>

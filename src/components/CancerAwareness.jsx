@@ -59,7 +59,7 @@ const CancerAwareness = () => {
                   <Heart size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-secondary text-lg">50-60% savings</h4>
+                  <h4 className="font-bold text-secondary text-lg"> Savings upto 40%</h4>
                   <p className="text-gray-500">Can be achieved through timely intervention and Oxxy.</p>
                 </div>
               </div>
@@ -72,21 +72,21 @@ const CancerAwareness = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="relative hidden lg:block"
+            className="relative block mt-12 lg:mt-0"
           >
             <div className="relative rounded-[3rem] overflow-hidden group shadow-2xl">
               <picture>
                 <source media="(min-width: 1024px)" srcSet="/rate2.png" />
                 <img
-                  src="/rate3.png"
-                  alt="Oncology Care"
+                  src="/cgraph.png"
+                  alt="Cancer Statistics Graph"
                   className="w-full h-auto lg:h-[450px] object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </picture>
               {/* Whitish Blurry Overlay */}
-              <div className="absolute inset-0 bg-white/40 backdrop-blur-xs transition-all duration-700 group-hover:bg-transparent group-hover:backdrop-blur-none pointer-events-none" />
+              <div className="absolute inset-0 bg-white/40 backdrop-blur-xs transition-all duration-700 group-hover:bg-transparent group-hover:backdrop-blur-none pointer-events-none hidden lg:block" />
 
-              <div className="absolute inset-0 top-16 lg:top-32 flex items-start p-4">
+              <div className="absolute inset-0 top-16 lg:top-32 hidden lg:flex items-start p-4">
                 <div className="text-white relative z-10">
                   <p className="text-primary font-bold mb-2 lg:mb-4 tracking-widest text-sm lg:text-base">Advanced Radiology</p>
                   <h4 className="text-xl lg:text-2xl text-black font-bold leading-tight">Bridging the gap in cancer<br /> care accessibility</h4>

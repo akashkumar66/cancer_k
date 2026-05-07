@@ -12,7 +12,7 @@ const Footer = () => {
               <img src='/oxxy_logo.png' className="h-12 w-auto md:h-10" />
             </div>
             <p className="text-gray-500 leading-relaxed max-w-sm">
-              India's leading healthcare savings platform helping families reduce their medical expenditure through pre negotiated network rates.
+              India's Leading Healthcare Savings Platform Helping Families Reduce Their Medical Expenditure Through Pre Negotiated Network Rates.
             </p>
             <div className="flex space-x-4">
               {[
@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-1">
             <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Quick Links</h4>
             <ul className="space-y-4">
-              {["How it works", "About Oxxy", "Network hospitals", "Medical camps", "Careers", "Media coverage"].map((link) => (
+              {["How it Works", "About Oxxy", "Network Hospitals", "Medical Camps", "Careers", "Media Coverage"].map((link) => (
                 <li key={link}>
                   <span className="text-gray-500">{link}</span>
                 </li>
@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-1">
             <h4 className="text-lg font-bold text-secondary mb-6 tracking-wider">Support</h4>
             <ul className="space-y-4">
-              {["Patient stories", "Terms of service", "Privacy policy", "Refund policy", "Contact us"].map((link) => (
+              {["Patient Stories", "Terms of Service", "Privacy Policy", "Refund Policy", "Contact Us"].map((link) => (
                 <li key={link}>
                   <span className="text-gray-500">{link}</span>
                 </li>
@@ -103,8 +103,8 @@ const Footer = () => {
         <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center">
             <div>
-              <p className="text-gray-400 text-sm">© 2025 Oxxy healthcare. All rights reserved.</p>
-              <p className="text-xs text-gray-400 mt-1 italic">Oxxy is not an insurance. Oxxy sells discounted health plans.</p>
+              <p className="text-gray-400 text-sm">© 2025 Oxxy Healthcare. All Rights Reserved.</p>
+              <p className="text-xs text-gray-400 mt-1 italic">Oxxy is Not an Insurance. Oxxy Sells Discounted Health Plans.</p>
             </div>
 
             {/* Credit Section */}

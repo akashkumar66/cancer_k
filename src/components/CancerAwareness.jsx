@@ -22,8 +22,8 @@ const CancerAwareness = () => {
               The Rising Challenge of <span className="text-red-500">Cancer in India</span>
             </h2>
 
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              India is facing a significant surge in cancer cases. Lack of awareness and high treatment costs often lead to delayed diagnosis and financial ruin for middle-class families.
+            <p className="text-md text-gray-600 mb-10 leading-relaxed">
+              India is Facing a Significant Surge in Cancer Cases. Lack of Awareness and High Treatment Costs Often Lead to Delayed Diagnosis and Financial Ruin for Middle-Class Families.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8">
@@ -33,7 +33,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">1 in 9 Indians</h4>
-                  <p className="text-gray-500">Likely to develop cancer in their lifetime.</p>
+                  <p className="text-gray-500">Likely to Develop Cancer in Their Lifetime.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -42,7 +42,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">14.6 lakh cases</h4>
-                  <p className="text-gray-500">Estimated new cancer cases in India annually.</p>
+                  <p className="text-gray-500">Estimated New Cancer Cases in India Annually.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -51,7 +51,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">₹5-15 lakhs</h4>
-                  <p className="text-gray-500">Average cost of complete cancer treatment cycle.</p>
+                  <p className="text-gray-500">Average Cost of Complete Cancer Treatment Cycle.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -60,7 +60,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg"> Savings upto 40%</h4>
-                  <p className="text-gray-500">Can be achieved through timely intervention and Oxxy.</p>
+                  <p className="text-gray-500">Can be Achieved Through Timely Intervention and Oxxy.</p>
                 </div>
               </div>
             </div>

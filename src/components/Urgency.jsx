@@ -35,15 +35,15 @@ const Urgency = () => {
             <Zap className="text-primary w-6 h-6 sm:w-8 sm:h-8" />
           </div>
           <div className="text-left">
-            <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">Cancer support initiative</h3>
-            <p className="text-sm sm:text-base text-white/80">Get 10% OFF on infinity plans. Use code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
+            <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">Cancer Support Initiative</h3>
+            <p className="text-sm sm:text-base text-white/80">Get 10% OFF on Infinity Plans. Use Code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <div className="flex items-center space-x-3 text-white">
             <Timer size={20} className="animate-pulse" />
-            <span className="font-bold tracking-wider text-sm sm:text-base whitespace-nowrap">Offer ends in:</span>
+            <span className="font-bold tracking-wider text-sm sm:text-base whitespace-nowrap">Offer Ends In:</span>
           </div>
 
           <div className="flex space-x-3">
@@ -65,7 +65,7 @@ const Urgency = () => {
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="hidden lg:block bg-white text-primary font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
-            Claim offer now
+            Claim Offer Now
           </button>
         </div>
       </div>

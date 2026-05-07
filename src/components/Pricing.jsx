@@ -9,7 +9,7 @@ const Pricing = () => {
     <section id="plans" className="section-padding bg-white relative">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-4xl premium-heading text-secondary mb-4">Affordable Plan for Every Family</h2>
-        <p className="text-xl text-gray-600">The best and affordable plan that fits for everybody.</p>
+        <p className="text-xl text-gray-600">The Best and Affordable Plan that Fits for Everybody.</p>
       </div>
 
       <div className="flex justify-center">
@@ -40,18 +40,18 @@ const Pricing = () => {
 
             <div className="space-y-3 text-left max-w-lg mx-auto mb-8">
               {[
-                { text: "Works on cancer patients at any stage*", bold: true },
-                { text: "No age limit*", bold: true },
-                { text: "No medical screening needed*", bold: true },
-                { text: "Discounts on medicines, chemotherapy, radiology & surgery", bold: false },
-                { text: "Discounts on all medical bills upto 40% with no upper limit of the bill value.", bold: false },
-                { text: "Use unlimited number of times", bold: false },
-                { text: "Valid on cancer & every other disease", bold: false },
-                { text: "Valid on all pre-existing diseases", bold: false },
-                { text: "Applicable on entire body.", bold: false },
+                { text: "Works on Cancer Patients at Any Stage*", bold: true },
+                { text: "No Age Limit*", bold: true },
+                { text: "No Medical Screening Needed*", bold: true },
+                { text: "Discounts on Medicines, Chemotherapy, Radiology & Surgery", bold: false },
+                { text: "Discounts on All Medical Bills Upto 40% with No Upper Limit of the Bill Value.", bold: false },
+                { text: "Use Unlimited Number of Times", bold: false },
+                { text: "Valid on Cancer & Every Other Disease", bold: false },
+                { text: "Valid on All Pre-existing Diseases", bold: false },
+                { text: "Applicable on Entire Body.", bold: false },
                 { text: "Works on OPD & IPD", bold: false },
-                { text: "Express appointment booking", bold: false },
-                { text: "Avail in health centers across 1500 cities of India", bold: false }
+                { text: "Express Appointment Booking", bold: false },
+                { text: "Avail in Health Centers Across 1500 Cities of India", bold: false }
               ].map((feature, i) => (
                 <div key={i} className="flex items-start space-x-3">
                   <div className="mt-1.5 w-1.5 h-1.5 bg-black rounded-full shrink-0" />
@@ -62,12 +62,14 @@ const Pricing = () => {
               ))}
             </div>
 
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full btn-gradient py-4 rounded-full font-bold text-lg shadow-premium tracking-widest hover:scale-[1.02] transition-transform"
-            >
-              Buy now
-            </button>
+            <a href="https://www.oxxy.in/cancer/healthplan.php?plan_name=cancer_care" target='_blank'>
+              <button
+                // onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full btn-gradient py-4 rounded-full font-bold text-lg shadow-premium tracking-widest hover:scale-[1.02] transition-transform"
+              >
+                Buy Now
+              </button>
+            </a>
           </div>
         </motion.div>
       </div>

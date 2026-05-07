@@ -7,25 +7,25 @@ const Problem = () => {
     {
       icon: <Stethoscope className="w-12 h-12 text-red-500" />,
       title: "Expensive Radiology",
-      description: "Cancer treatments like chemotherapy and radiology can cost lakhs per session, often exceeding insurance limits."
+      description: "Cancer Treatments Like Chemotherapy and Radiology can Cost Lakhs Per Session, Often Exceeding Insurance Limits."
     },
     {
       icon: <Clock className="w-12 h-12 text-red-500" />,
-      title: "Wait & exclusion",
-      description: "Most policies have a 2-4 year waiting period for cancer, leaving patients vulnerable when they need help now."
+      title: "Wait & Exclusion",
+      description: "Most Policies have a 2-4 Years Waiting Period for Cancer, Leaving Patients Vulnerable When They need Help Now."
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-red-500" />,
-      title: "Savings wipeout",
-      description: "A full cancer treatment cycle can wipe out a family's lifetime savings, leading to immense financial stress."
+      title: "Savings Wipeout",
+      description: "A full Cancer Treatment Cycle can Wipe Out a Family's Lifetime Savings, Leading to Immense Financial Stress."
     }
   ];
 
   return (
     <section className="section-padding bg-white">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl premium-heading text-secondary mb-6">Why modern healthcare is failing you?</h2>
-        <p className="text-xl text-gray-600">The traditional healthcare system is designed to benefit hospitals, not patients. Here's the reality most families face:</p>
+        <h2 className="text-4xl premium-heading text-secondary mb-6">Why Modern Healthcare is Failing You?</h2>
+        <p className="text-lg text-gray-600">The Traditional Healthcare System is Designed to Benefit Hospitals, Not Patients. Here's the Reality Most Families Face:</p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">

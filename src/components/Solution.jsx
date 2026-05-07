@@ -4,10 +4,10 @@ import { Zap, Truck, Pill, Infinity, Sparkles, TrendingDown, Hospital } from 'lu
 
 const Solution = () => {
   const highlights = [
-    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology savings", desc: "Save upto 40% off on chemo and radiology" },
+    { icon: <TrendingDown className="w-8 h-8 text-primary" />, title: "Radiology Savings", desc: "Save Upto 40% Off on Chemo and Radiology" },
     // { icon: <Hospital className="w-8 h-8 text-primary" />, title: "Priority Admissions", desc: "Skip the lines at top cancer centers" },
-    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco medicines", desc: "Free home delivery of specialized meds" },
-    { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No treatment cap", desc: "Unlimited usage for long-term care" }
+    { icon: <Truck className="w-8 h-8 text-primary" />, title: "Onco Medicines", desc: "Free Home Delivery of Specialized Meds" },
+    { icon: <Infinity className="w-8 h-8 text-primary" />, title: "No Treatment Cap", desc: "Unlimited Usage for Long-term Care" }
   ];
 
   return (
@@ -21,8 +21,8 @@ const Solution = () => {
           <h2 className="text-4xl md:text-5xl premium-heading text-secondary mb-8">
             Oxxy: The <span className="text-primary">Cancer Support Network</span> You Can Rely on
           </h2>
-          <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-            We've built India's most robust oncology network. From PET scans and biopsies to complex surgeries and immunotherapy, we ensure you get the best care at pre-negotiated, affordable rates.
+          <p className="text-md text-gray-600 mb-10 leading-relaxed">
+            We've Built India's Most Robust Oncology Network. From PET Scans and Biopsies to Complex Surgeries and Immunotherapy, we Ensure you Get the Best Care at Pre-Negotiated, Affordable Rates.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

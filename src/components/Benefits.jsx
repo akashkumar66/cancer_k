@@ -6,18 +6,18 @@ const Benefits = () => {
   const leftBenefits = [
     {
       icon: <ClipboardCheck className="text-teal-500" size={40} />,
-      title: "Valid on all pre-existing diseases",
-      desc: "Oxxy works on all pre-existing diseases like diabetes, cancer etc."
+      title: "Valid on All Pre-Existing Diseases",
+      desc: "Oxxy Works on All Pre-Existing Diseases Like Diabetes, Cancer etc."
     },
     {
       icon: <TrendingUp className="text-teal-500" size={40} />,
-      title: "No age limit",
-      desc: "Oxxy health services can be availed by any age group from 0 to 120 years."
+      title: "No Age Limit",
+      desc: "Oxxy Health Services can be Availed by Any Age Group from 0 to 120 Years."
     },
     {
       icon: <FileText className="text-teal-500" size={40} />,
-      title: "No limit on medical expenses",
-      desc: "Oxxy works seamlessly on all your medical expenses, from bill of Rs. 5000 to Rs. 5 crores."
+      title: "No Limit on Medical Expenses",
+      desc: "Oxxy Works Seamlessly on All Your Medical Expenses, From Bill of Rs. 5000 to Rs. 5 Crores."
     }
   ];
 
@@ -25,17 +25,17 @@ const Benefits = () => {
     {
       icon: <History className="text-teal-500" size={40} />,
       title: "Works on OPD & IPD",
-      desc: "Most medical protections work after 24 hours hospitalization. Oxxy caters from small tests to expensive medical surgeries."
+      desc: "Most Medical Protections Work after 24 Hours Hospitalization. Oxxy Caters from Small Tests to Expensive Medical Surgeries."
     },
     {
       icon: <Infinity className="text-teal-500" size={40} />,
-      title: "Unlimited usage",
-      desc: "Use unlimited time. Get discounts on any tests, treatments & surgeries."
+      title: "Unlimited Usage",
+      desc: "Use Unlimited Time. Get Discounts on Any Tests, Treatments & Surgeries."
     },
     {
       icon: <Stethoscope className="text-teal-500" size={40} />,
       title: "Includes Eye, Dental & Derma",
-      desc: "Also get discounts on eye surgeries, dental procedures, derma & cosmetic treatments."
+      desc: "Also Get Discounts on Eye Surgeries, Dental Procedures, Derma & Cosmetic Treatments."
     }
   ];
 

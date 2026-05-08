@@ -21,7 +21,7 @@ const About = () => {
               Mission to Simplify <span className="text-primary">Cancer Care</span>
             </h2>
             <p className="text-md text-gray-600 mb-8 leading-relaxed font-medium">
-              Overall, Oxxy Aims to Simplify the Cancer Treatment Journey by Providing Complete Support from Diagnosis to Post - Treatment Care while Significantly Reducing Medical Expenses, Allowing Patients and their Families to Focus on Recovery and Well Being.
+              Overall, Oxxy aims to simplify the Cancer Treatment journey by providing Complete Support from Diagnosis to Post - Treatment Care while significantly reducing Medical Expenses, allowing patients and their Families to focus on Recovery and Well Being.
             </p>
 
             <div className="space-y-4">
@@ -35,7 +35,7 @@ const About = () => {
                 <div className="bg-white p-3 rounded-xl shadow-sm text-primary">
                   <Sparkles size={24} />
                 </div>
-                <p className="font-bold text-secondary">End-to-end Treatment Support</p>
+                <p className="font-bold text-secondary">End-to-End Treatment Support</p>
               </div>
             </div>
           </motion.div>

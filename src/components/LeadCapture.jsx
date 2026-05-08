@@ -21,14 +21,14 @@ const LeadCapture = () => {
           <div>
             <h2 className="text-4xl font-bold text-secondary mb-6">Reduce Your Cancer Treatment Costs Today</h2>
             <p className="text-md text-gray-600 mb-8 leading-relaxed">
-              Don't Let Medical Bills Come in the Way of Your Recovery. Join India's Largest Cancer Support Network.
+              Don't let Medical Bills come in the way of your Recovery. Join India's Largest Cancer Support Network.
             </p>
 
             <ul className="space-y-4">
               {[
                 "Works on Chemo, Radiology & Surgery",
                 "No Medical Tests or Waiting Periods",
-                "Valid for All Pre-existing Cancers"
+                "Valid for All Pre-Existing Cancers"
               ].map((text, i) => (
                 <li key={i} className="flex items-center space-x-3 text-secondary font-semibold">
                   <CheckCircle className="text-primary" size={20} />

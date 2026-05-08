@@ -7,17 +7,17 @@ const Problem = () => {
     {
       icon: <Stethoscope className="w-12 h-12 text-red-500" />,
       title: "Expensive Radiology",
-      description: "Cancer Treatments Like Chemotherapy and Radiology can Cost Lakhs Per Session, Often Exceeding Insurance Limits."
+      description: "Cancer treatments like Chemotherapy and Radiology can cost Lakhs per Session, Often exceeding Insurance Limits."
     },
     {
       icon: <Clock className="w-12 h-12 text-red-500" />,
       title: "Wait & Exclusion",
-      description: "Most Policies have a 2-4 Years Waiting Period for Cancer, Leaving Patients Vulnerable When They need Help Now."
+      description: "Most policies have a 2-4 years waiting period for Cancer, leaving patients vulnerable when they need help now."
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-red-500" />,
       title: "Savings Wipeout",
-      description: "A full Cancer Treatment Cycle can Wipe Out a Family's Lifetime Savings, Leading to Immense Financial Stress."
+      description: "A full Cancer Treatment Cycle can wipe out a family's lifetime savings, leading to Immense Financial Stress."
     }
   ];
 
@@ -25,7 +25,7 @@ const Problem = () => {
     <section className="section-padding bg-white">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-4xl premium-heading text-secondary mb-6">Why Modern Healthcare is Failing You?</h2>
-        <p className="text-lg text-gray-600">The Traditional Healthcare System is Designed to Benefit Hospitals, Not Patients. Here's the Reality Most Families Face:</p>
+        <p className="text-lg text-gray-600">The Traditional Healthcare System is Designed to benefit Hospitals, Not Patients. Here's the Reality Most Families Face:</p>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
@@ -58,8 +58,8 @@ const Problem = () => {
           </div>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
             <p className="text-white text-xl font-medium mb-4">Don't let this be your story.</p>
-            <p className="text-white/80 mb-6">Oxxy provides guaranteed savings without the hidden clauses of traditional insurance.</p>
-            <a href='https://www.oxxy.in/cancer/' target='_blank'>
+            <p className="text-white/80 mb-6">Oxxy provides guaranteed savings without the hidden clauses of traditional Insurance.</p>
+            <a href='#plans'>
               <button className="bg-white text-secondary font-bold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all">
                 Start Saving
               </button>

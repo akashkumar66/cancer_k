@@ -23,7 +23,7 @@ const CancerAwareness = () => {
             </h2>
 
             <p className="text-md text-gray-600 mb-10 leading-relaxed">
-              India is Facing a Significant Surge in Cancer Cases. Lack of Awareness and High Treatment Costs Often Lead to Delayed Diagnosis and Financial Ruin for Middle-Class Families.
+              India is facing a significant surge in Cancer Cases. Lack of Awareness and High Treatment Costs often lead to delayed diagnosis and Financial Ruin for Middle-Class Families.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8">
@@ -33,7 +33,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">1 in 9 Indians</h4>
-                  <p className="text-gray-500">Likely to Develop Cancer in Their Lifetime.</p>
+                  <p className="text-gray-500">Likely to develop Cancer in their lifetime.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -42,7 +42,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">14.6 lakh cases</h4>
-                  <p className="text-gray-500">Estimated New Cancer Cases in India Annually.</p>
+                  <p className="text-gray-500">Estimated new Cancer Cases in India annually.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -51,7 +51,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg">₹5-15 lakhs</h4>
-                  <p className="text-gray-500">Average Cost of Complete Cancer Treatment Cycle.</p>
+                  <p className="text-gray-500">Average cost of complete Cancer Treatment Cycle.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -60,7 +60,7 @@ const CancerAwareness = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-secondary text-lg"> Savings upto 40%</h4>
-                  <p className="text-gray-500">Can be Achieved Through Timely Intervention and Oxxy.</p>
+                  <p className="text-gray-500">Can be achieved through timely Intervention and Oxxy.</p>
                 </div>
               </div>
             </div>
@@ -86,10 +86,10 @@ const CancerAwareness = () => {
               {/* Whitish Blurry Overlay */}
               <div className="absolute inset-0 bg-white/40 backdrop-blur-xs transition-all duration-700 group-hover:bg-transparent group-hover:backdrop-blur-none pointer-events-none hidden lg:block" />
 
-              <div className="absolute inset-0 top-16 lg:top-32 hidden lg:flex items-start p-4">
+              <div className="absolute inset-0 hidden lg:flex items-start p-4">
                 <div className="text-white relative z-10">
-                  <p className="text-primary font-bold mb-2 lg:mb-4 tracking-widest text-sm lg:text-base">Advanced Radiology</p>
-                  <h4 className="text-xl lg:text-2xl text-black font-bold leading-tight">Bridging the gap in cancer<br /> care accessibility</h4>
+                  <p className="text-primary font-bold tracking-widest text-sm lg:text-base">Advanced Radiology</p>
+                  <h4 className="text-xl lg:text-2xl text-black font-bold leading-tight">Bridging the gap in cancer care accessibility</h4>
                 </div>
               </div>
             </div>

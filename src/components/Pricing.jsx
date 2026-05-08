@@ -47,7 +47,7 @@ const Pricing = () => {
                 { text: "Discounts on All Medical Bills Upto 40% with No Upper Limit of the Bill Value.", bold: false },
                 { text: "Use Unlimited Number of Times", bold: false },
                 { text: "Valid on Cancer & Every Other Disease", bold: false },
-                { text: "Valid on All Pre-existing Diseases", bold: false },
+                { text: "Valid on All Pre-Existing Diseases", bold: false },
                 { text: "Applicable on Entire Body.", bold: false },
                 { text: "Works on OPD & IPD", bold: false },
                 { text: "Express Appointment Booking", bold: false },

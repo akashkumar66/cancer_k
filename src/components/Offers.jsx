@@ -65,7 +65,7 @@ const Offers = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-500"
           >
-            The Only Health Plan That Works After Cancer Detection
+            The Only Health Plan that Works After Cancer Detection
           </motion.p>
         </div>
 

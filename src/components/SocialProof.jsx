@@ -7,33 +7,33 @@ const SocialProof = () => {
     {
       name: "Amaya Lal 38",
       role: "New Delhi, Delhi",
-      content: "I Used to Smoke in the Company of My Friends. I Never Thought That It Will Lead to Cancer. But When I Was Diagnosed With Cancer, I Was Shocked. I Didn't Know What to Do. But Then I Found Out About Oxxy and Thanks for Taking Care of Me Completly.",
+      content: "I used to smoke in the company of my friends. I never thought that it will lead to Cancer. But when I was diagnosed with Cancer, I was shocked. I didn't know what to do. But then i found out about Oxxy and thanks for taking care of me completly.",
       image: "women1.png"
     },
     {
       name: "Arif Mohammad 57",
       role: "Hyderabad , Telangana",
-      content: "I am an Insurance Broker. Couldn't Imagine That Someone Can Offer a Cancer Health Plan After Cancer Predected. It Will Be a Big Support for All My Clients Who Are Run Insured / Under Insured to Save Money.",
+      content: "I am an Insurance Broker. Couldn't imagine that someone can offer a Cancer Health Plan after Cancer predected. It will be a big support for all my clients who are run insured / under insured to save money.",
       image: "men.png"
     },
     {
       name: "Zubaida Begum 52",
       role: "Noida, Uttar Pradesh",
-      content: "My Mom Had Cancer Stage 4. Nobody Was Willing to Support. Oxxy Was Big Help Saved Alot of Money at the Time When Needed. Works on Medicines Too. Thank God My Mom Is Out of Danger Now. Oxxy Played a Big Role to Save My Mom.",
+      content: "My mom had Cancer stage 4. Nobody was willing to support. Oxxy was big help saved alot of money at the time when needed. Works on medicines too. Thank god my mom is out of danger now. Oxxy played a big role to save my mom.",
       image: "women2.png"
     }
   ];
 
   const mediaCoverage = [
-    { img: "/1_toi1.png", title: "The Times of India", desc: "Oxxy Launches Affordable Health Plan For Entire Family" },
-    { img: "/2_core.png", title: "Core Sector Communique", desc: "OXXY Launches Its Plan To Give Nightmare to Health Insurance Companies" },
-    { img: "/7_tele.png", title: "Telecompaper", desc: "Oneplus, Oxxy Partner on Health Project in India" },
-    { img: "/9_et.png", title: "Economic Times", desc: "Oxxy to Launch Chain of Hospitals Across India" },
-    { img: "/14_firstpost.png", title: "Firstpost", desc: "Uber-Oxxy Tie Up: Free Cab Rides to All Hospitals" },
-    { img: "/25_live.png", title: "Mint", desc: "Uber, Oxxy Tie Up to Provide Cab Rides to Delhi Hospitals" },
-    { img: "/40_oneindia.png", title: "One India", desc: "Oxxy to Make FD of ₹11,000 for Every Girl Child Born" },
-    { img: "/41_inkhabar.png", title: "Inkhabar", desc: "Good News For Every Girl Child Born in India - Oxxy FD" },
-    { img: "/45_naiduniya.png", title: "Naidunia Jagran", desc: "FD of ₹11,000 on Birth of Every Girl Child in India" }
+    { img: "/1_toi1.png", title: "The Times of India", desc: "Oxxy launches affordable Health Plan for entire family" },
+    { img: "/2_core.png", title: "Core Sector Communique", desc: "OXXY launches its plan to give nightmare to Health Insurance Companies" },
+    { img: "/7_tele.png", title: "Telecompaper", desc: "Oneplus, Oxxy partner on health project in India" },
+    { img: "/9_et.png", title: "Economic Times", desc: "Oxxy to launch chain of hospitals across India" },
+    { img: "/14_firstpost.png", title: "Firstpost", desc: "Uber-Oxxy tie up: Free cab rides to all hospitals" },
+    { img: "/25_live.png", title: "Mint", desc: "Uber, Oxxy tie up to provide cab rides to Delhi hospitals" },
+    { img: "/40_oneindia.png", title: "One India", desc: "Oxxy to make FD of ₹11,000 for every girl child born" },
+    { img: "/41_inkhabar.png", title: "Inkhabar", desc: "Good news for every girl child born in India - Oxxy FD" },
+    { img: "/45_naiduniya.png", title: "Naidunia Jagran", desc: "FD of ₹11,000 on birth of every girl child in India" }
   ];
 
 
@@ -46,7 +46,7 @@ const SocialProof = () => {
       <div className="relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl font-bold text-white mb-6">Real Stories From Real Families</h2>
-          <p className="text-xl text-white/70">Join Millions of Indians Who Are Already Saving on Their Healthcare Costs with Oxxy.</p>
+          <p className="text-xl text-white/70">Join Millions of Indians Who are Already Saving on their Healthcare Costs with Oxxy.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 px-4">

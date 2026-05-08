@@ -22,7 +22,7 @@ const Solution = () => {
             Oxxy: The <span className="text-primary">Cancer Support Network</span> You Can Rely on
           </h2>
           <p className="text-md text-gray-600 mb-10 leading-relaxed">
-            We've Built India's Most Robust Oncology Network. From PET Scans and Biopsies to Complex Surgeries and Immunotherapy, we Ensure you Get the Best Care at Pre-Negotiated, Affordable Rates.
+            We've built India's most robust Oncology network. From PET Scans and Biopsies to complex Surgeries and Immunotherapy, we ensure you get the best care at Pre-Negotiated, Affordable rates.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

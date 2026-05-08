@@ -36,7 +36,7 @@ const Urgency = () => {
           </div>
           <div className="text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">Cancer Support Initiative</h3>
-            <p className="text-sm sm:text-base text-white/80">Get 10% OFF on Infinity Plans. Use Code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
+            <p className="text-sm sm:text-base text-white/80">Get upto 40% OFF. Use Code <span className="font-bold text-white bg-secondary/20 px-2 py-0.5 rounded">FIGHTCANCER</span></p>
           </div>
         </div>
 

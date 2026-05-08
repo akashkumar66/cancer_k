@@ -7,17 +7,17 @@ const HowItWorks = () => {
     {
       icon: <UserPlus className="w-10 h-10 text-primary" />,
       title: "Get Oxxy Membership",
-      desc: "Get Your Support Plan. No Medical Tests Required for Enrollment."
+      desc: "Get your support plan. No medical Tests required for enrollment."
     },
     {
       icon: <Stethoscope className="w-10 h-10 text-primary" />,
       title: "Consult Radiologists",
-      desc: "Visit Radiology Centers and Specialized Cancer Hospitals."
+      desc: "Visit Radiology centers and specialized Cancer hospitals."
     },
     {
       icon: <IndianRupee className="w-10 h-10 text-primary" />,
       title: "Save on Treatments",
-      desc: "Get Upto 40% Discount on Chemo, Radiology, Scans, Surgery & Medicine."
+      desc: "Get upto 40% discount on Chemo, Radiology, Scans, Surgery & Medicine."
     }
   ];
 
@@ -27,7 +27,7 @@ const HowItWorks = () => {
 
       <div className="text-center max-w-3xl mx-auto mb-20 relative z-10">
         <h2 className="text-4xl font-bold text-secondary mb-6">Start Saving in 3 Simple Steps</h2>
-        <p className="text-xl text-gray-600">Healthcare Should be Simple. With Oxxy, Saving Money on Your Medical Bills is Easier than Ordering Food.</p>
+        <p className="text-xl text-gray-600">Healthcare should be Simple. With Oxxy, Saving Money on your Medical Bills is Easier than Ordering Food.</p>
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto relative z-10 space-y-12 md:space-y-0">

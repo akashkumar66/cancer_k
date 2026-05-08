@@ -12,7 +12,7 @@ const Footer = () => {
               <img src='/oxxy_logo.png' className="h-12 w-auto md:h-10" />
             </div>
             <p className="text-gray-500 leading-relaxed max-w-sm">
-              India's Leading Healthcare Savings Platform Helping Families Reduce Their Medical Expenditure Through Pre Negotiated Network Rates.
+              India's leading Healthcare Savings platform helping Families to reduce their Medical Expenditure through Pre Negotiated network rates.
             </p>
             <div className="flex space-x-4">
               {[
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center">
             <div>
-              <p className="text-gray-400 text-sm">© 2025 Oxxy Healthcare. All Rights Reserved.</p>
+              <p className="text-gray-400 text-sm">© 2026 Oxxy Healthcare. All Rights Reserved.</p>
               <p className="text-xs text-gray-400 mt-1 italic">Oxxy is Not an Insurance. Oxxy Sells Discounted Health Plans.</p>
             </div>
 

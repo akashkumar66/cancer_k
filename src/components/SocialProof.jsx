@@ -7,7 +7,7 @@ const SocialProof = () => {
     {
       name: "Amaya Lal 38",
       role: "New Delhi, Delhi",
-      content: "I used to smoke in the company of my friends. I never thought that it will lead to Cancer. But when I was diagnosed with Cancer, I was shocked. I didn't know what to do. But then i found out about Oxxy and thanks for taking care of me completly.",
+      content: "I used to smoke in the company of my friends. I never thought that it will lead to Cancer. But when I was diagnosed with Cancer, I was shocked. I didn't know what to do. But then i found out about Oxxy and thanks for taking care of me completely.",
       image: "women1.png"
     },
     {

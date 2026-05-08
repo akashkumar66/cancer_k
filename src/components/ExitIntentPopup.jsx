@@ -39,13 +39,13 @@ const ExitIntentPopup = ({ onClose }) => {
             <span>Exclusive offer</span>
           </div>
 
-          <h2 className="text-3xl font-bold text-secondary mb-4">Get ₹500 OFF on your first plan</h2>
-          <p className="text-gray-600 mb-8">Save an extra ₹500 today. Use the code below at checkout to claim your healthcare savings.</p>
+          <h2 className="text-3xl font-bold text-secondary mb-4">Get 40% OFF</h2>
+          <p className="text-gray-600 mb-8">Use the code below at checkout to claim your upto 40% healthcare savings.</p>
 
           <div className="bg-gray-50 border-2 border-dashed border-primary/30 p-6 rounded-2xl flex items-center justify-between mb-8">
             <div>
               <p className="text-xs text-gray-400 font-bold tracking-wider">Your promo code</p>
-              <p className="text-2xl font-bold text-primary tracking-widest">WELCOME500</p>
+              <p className="text-2xl font-bold text-primary tracking-widest">FIGHTCANCER</p>
             </div>
             <button className="bg-primary text-white p-3 rounded-xl hover:bg-primary-dark transition-all">
               <ArrowRight size={24} />
@@ -56,9 +56,9 @@ const ExitIntentPopup = ({ onClose }) => {
             onClick={onClose}
             className="w-full btn-gradient py-4 rounded-2xl font-bold text-lg"
           >
-            Claim discount now
+            Claim Now
           </button>
-          <p className="text-center mt-4 text-sm text-gray-400">Valid for next 24 hours only.</p>
+          <p className="text-center mt-4 text-sm text-gray-400"></p>
         </div>
       </motion.div>
     </div>
